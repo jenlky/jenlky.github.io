@@ -1,21 +1,52 @@
 ---
 title: Hello World
-date: "2015-05-01T22:12:03.284Z"
+date: "2019-04-01T22:12:03.284Z"
 ---
 
-This is my first post on my new fake blog! How exciting!
+Hi I'm Jenssen! I've created this blog dedicated for programming and technical problems I've faced.
+This is my first post and serves as an introduction on what I want to do!
 
-I'm sure I'll write a lot more interesting things in the future.
+I have another blog on wordpress for non-technical matters, I was wondering if I should combine them together. Time will tell!
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
+That's it for now. I'll write about the problems I faced with development and deployment of ShopLah in the next post!
 
+Note to self: this [Markdown Guide](https://www.markdownguide.org/basic-syntax) will come in handy!
+
+<!--
+https://www.markdownguide.org/basic-syntax
+
+# h1
+## h2
+
+== h1 (any number of ==/-- characters)
+-- h2
+
+**Bold**
+__Bold__
+
+*Italic*
+_Italic_
+
+***Bold and Italic***
+___Bold and Italic___
+__*Bold and Italic*__
+**_Bold and Italic_**
+
+Blockquotes:
 > A salted duck egg is a Chinese preserved food product made by soaking duck
 > eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
 
+Links:
+[salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg)
+
+Images: 
 ![Chinese Salty Egg](./salty_egg.jpg)
+
+Lists: 
+1. Fat
+2. Sugar
+
+-Sulfur
+-Ammonia
+  -Bomb
+-->
