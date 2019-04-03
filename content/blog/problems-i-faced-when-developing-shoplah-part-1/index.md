@@ -1,17 +1,24 @@
 ---
 title: Problems I faced when developing ShopLah (Part 1)
-date: "2019-04-02T10:00:00.121Z"
+date: "2019-04-02T20:30:00.121Z"
+tags: ["developing", "React", "Redux"]
 ---
 
-ShopLah is a shopping cart site [hosted on heroku](https://jenlky-shopping-cart.herokuapp.com/). It was created with...
+ShopLah is a shopping cart site [hosted on heroku](https://jenlky-shopping-cart.herokuapp.com/), created with the following libraries:
 
-Explain the tech chose...
+> **Client:** React, React Router, Redux (redux-thunk, redux-logger, redux-persist), Material-UI
+> 
+> **Server:** Node.js, Express, ejs for templating, dotenv, CORS
+> 
+> **Authentication:** Passport.js, passport-auth0 and express-session
+> 
+> **Testing:** Mocha and Chai
+
+To read why I chose the following libraries, check out this [post](/reasons-for-choosing-shoplah-libraries/).
 
 
 ###Cart controller logic###
-Assumption: User has to login first before he can add product to cart.
-
-> Action Creators flow chart:
+> Redux action creators flow chart:
 >
 > AddToCart (product doesn't exist or qty === 0) -> cart controller -> UpdateStore -> CalculatePrice
 >
@@ -106,16 +113,18 @@ Although this means that an extra action has to be dispatched for non-logged in 
 
 
 ###I used Auslogics Disk Defrag defrag and optimise###
-```
-npm config get prefix
-C:\Users\Jen\AppData\Roaming\npm
-```
-
-On hindsight, I shouldn't do that because it messed with my environment variables path and node_modules. The latter showed this error -
+On hindsight, I shouldn't do that because it messed with my environment variables path and node\*_modules. I knew my node\*_modules were faulty because it showed the error -
 **'nodemon' is not recognized as an internal or external command, operable program or batch file.**
 
-To fix the former, I went My Computer (for Windows 7) or This PC (for Windows 10), right click -> properties -> advanced system settings. 
+To fix the former, type the following:
 
-Under Advanced tab, click on Environment Variables and under user variables for John - edit path variable and check if the path above is inside. I added it inside, restarted and the problem was fixed.
+```
+npm config get prefix
+C:\Users\Jen\AppData\Roaming\npm // that's the path on my pc
+```
+
+Go to My Computer (for Windows 7) or This PC (for Windows 10), right click -> properties -> advanced system settings. 
+
+Under Advanced tab, click on Environment Variables and under user variables for *user* - click edit path variable and check if the path above is inside. If it is not, add it in and restart your computer.
 
 To fix the latter, I had to remove and re-install all the packages...
