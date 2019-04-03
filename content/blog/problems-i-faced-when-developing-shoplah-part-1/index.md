@@ -4,17 +4,10 @@ date: "2019-04-02T20:30:00.121Z"
 tags: ["developing", "React", "Redux"]
 ---
 
-ShopLah is a shopping cart site [hosted on heroku](https://jenlky-shopping-cart.herokuapp.com/), created with the following libraries:
+ShopLah is a shopping cart site [hosted on heroku](https://jenlky-shopping-cart.herokuapp.com/) which was built using React, React Router, Redux, Redux-persist and Mongoose (not an exhaustive list). 
 
-> **Client:** React, React Router, Redux (redux-thunk, redux-logger, redux-persist), Material-UI
-> 
-> **Server:** Node.js, Express, ejs for templating, dotenv, CORS
-> 
-> **Authentication:** Passport.js, passport-auth0 and express-session
-> 
-> **Testing:** Mocha and Chai
-
-To read why I chose the following libraries, check out this [post](/reasons-for-choosing-shoplah-libraries/).
+To find out all the libraries that I used and the reasons behind my decision, 
+check out this [post](/reasons-for-choosing-shoplah-libraries/).
 
 
 ###Cart controller logic###
