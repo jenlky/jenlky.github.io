@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import "./layout.css"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -14,7 +15,7 @@ class Layout extends React.Component {
         <h1
           style={{
             ...scale(1.5),
-            // Technical Blog marginBottom
+            // Header: 'Technical Blog' marginBottom
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
