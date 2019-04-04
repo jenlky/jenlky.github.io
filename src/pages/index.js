@@ -65,10 +65,10 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM Do, YYYY")
             title
-            description
           }
         }
       }
     }
   }
 `
+{/* description below title */}
