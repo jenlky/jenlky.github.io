@@ -106,7 +106,7 @@ Although this means that an extra action has to be dispatched for non-logged in 
 
 
 ###I used Auslogics Disk Defrag defrag and optimise###
-On hindsight, I shouldn't do that because it messed with my environment variables path and node\*_modules. I knew my node\*_modules were faulty because it showed the error -
+On hindsight, I shouldn't do that because it messed with my environment variables path and node\_modules. I knew my node\_modules were faulty because it showed the error -
 **'nodemon' is not recognized as an internal or external command, operable program or batch file.**
 
 To fix the former, type the following:
