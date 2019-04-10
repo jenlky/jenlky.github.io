@@ -56,14 +56,19 @@ CORS stands for Cross-Origin Resource Sharing. It is a mechanism that uses addit
 
 For security reasons, browsers restrict cross-origin HTTP requests initiated from within scripts. For example, XMLHttpRequest and the Fetch API follow the same-origin policy. This means that a web application using those APIs can only request HTTP resources from the same origin the application was loaded from, unless the response from the other origin includes the right CORS headers.
 
+The use-case for CORS is simple. Imagine the site alice.com has some data that the site bob.com wants to access. This type of request traditionally wouldn’t be allowed under the browser’s same origin policy. However, by supporting CORS requests, alice.com can add a few special response headers that allows bob.com to access the data.
+
 <!--
 **Why did I have to use it for my webapp?**
-> APIs are the threads that let you stitch together a rich web experience. But this experience has a hard time translating to the browser, where the options for cross-domain requests are limited to techniques like JSON-P (which has limited use due to security concerns) or setting up a custom proxy (which can be a pain to set up and maintain).
-> 
-> Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain communication from the browser. By building on top of the XMLHttpRequest object, CORS allows developers to work with the same idioms as same-domain requests.
-> 
-> The use-case for CORS is simple. Imagine the site alice.com has some data that the site bob.com wants to access. This type of request traditionally wouldn’t be allowed under the browser’s same origin policy. However, by supporting CORS requests, alice.com can add a few special response headers that allows bob.com to access the data.
+-->
 
 ###Passport###
-Passport.js, passport-auth0 and express-session???
--->
+####passport-auth0####
+I chose passport-auth0 strategy because I was learning about authentication and Mongoose and was looking for a no-frills authentication method. Therefore, I chose a third-party authentication provider like Auth0. 
+
+####express-session####
+> The Auth0 Passport strategy enforces use of state parameter in OAuth 2.0 authorization requests and requires session support in Express to be enabled.
+
+Session data is not saved in the cookie itself, just the session ID. Session data is stored server-side.
+
+I needed express-session to store session ID, so that cookie session ID can be compared with server session ID. If it tallies, the user will be given access to that particular account.
