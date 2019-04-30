@@ -18,10 +18,13 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Bio />
-        <Link to="/">Blog</Link>
-        <Link to="/">Portfolio</Link>
-        <Link to="/">About</Link>
+        <h1>Jenssen Lee</h1>
+        <p>Software Engineer</p>
+        <ul>
+          <Link to="/blog">Blog</Link>
+          <Link to="/portfolio">Portfolio</Link>  
+          <Link to="/about">About</Link>
+        </ul>
       </Layout>
     )
   }
@@ -52,4 +55,3 @@ export const pageQuery = graphql`
     }
   }
 `
-{/* description below title */}
