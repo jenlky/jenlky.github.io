@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -18,13 +17,21 @@ class BlogIndex extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <h1>Jenssen Lee</h1>
+        <h1 style={{ fontWeight: 600 }}>Jenssen Lee</h1>
         <p>Software Engineer</p>
-        <ul>
-          <Link to="/blog">Blog</Link>
-          <Link to="/portfolio">Portfolio</Link>  
-          <Link to="/about">About</Link>
-        </ul>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link to="/projects">Projects</Link>  
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+        </nav>
       </Layout>
     )
   }
