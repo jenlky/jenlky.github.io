@@ -1,14 +1,14 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import "./layout.css"
+import "./global.css"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
+    // const rootPath = `${__PATH_PREFIX__}/`
     // const { author } = data.site.siteMetadata
     let header
 
