@@ -1,4 +1,30 @@
+/* for layout.js */
 h3 {
   margin-top: 2.5rem;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* for index.js */
+ul {
+  display: block;
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+li:not(:last-child) {
+  margin-right: 20px;
+}

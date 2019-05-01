@@ -37,6 +37,7 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
+            {/* 
             <p>
               Written by <strong>{author}</strong> who lives in Singapore and is currently 
               looking for work!
@@ -51,8 +52,8 @@ function Bio() {
               <span> </span>
               <a href={`https://twitter.com/${social.twitter}`}>
                 Twitter
-            </a>
-            </p>
+              </a>
+            </p> */}
           </div>
         )
       }}

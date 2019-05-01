@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import "./layout.css"
 
@@ -59,12 +59,14 @@ class Layout extends React.Component {
     
     header = (data) => {
       return (
-        <div
+        <Link 
+          to='/'
           style={{
-            display: `flex`,
-            justifyContent: `center`,
-            alignItems: `center`
-            //marginBottom: rhythm(2.5),
+            textDecoration: `none`,
+            color: `white`,
+          }}
+          activeStyle={{
+            textDecoration: `none`,
           }}
         >
           <Image
@@ -80,7 +82,7 @@ class Layout extends React.Component {
               borderRadius: `50%`,
             }}
           />
-        </div>
+        </Link> 
       );
     }
       
@@ -94,8 +96,7 @@ class Layout extends React.Component {
                 marginLeft: `auto`,
                 marginRight: `auto`,
                 maxWidth: rhythm(24),
-                // padding of whole div
-                padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+                padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`, // padding of whole div
               }}
             >
               <header>{header(data)}</header>
@@ -117,7 +118,7 @@ const layoutQuery = graphql`
   query layoutQuery {
     avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 120, height: 120) {
           ...GatsbyImageSharpFixed
         }
       }
