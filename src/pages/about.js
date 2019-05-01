@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import NavLinks from "../components/navLinks"
 
 class BlogIndex extends React.Component {
   render() {
@@ -35,6 +36,7 @@ class BlogIndex extends React.Component {
           (<a href="https://github.com/helplah/princeton-algorithms">Github repo</a>);
           while waiting to join ThoughtWorks JumpStart (a three months coding bootcamp) in May. 
         </p>
+        <NavLinks />
       </Layout>
     )
   }

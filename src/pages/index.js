@@ -1,8 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import NavLinks from "../components/navLinks"
 
 class Index extends React.Component {
   render() {
@@ -17,19 +18,7 @@ class Index extends React.Component {
         />
         <h1>Jenssen Lee</h1>
         <p>Software Engineer</p>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>  
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
+        <NavLinks />
       </Layout>
     )
   }
