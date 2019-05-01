@@ -18,7 +18,12 @@ class BlogIndex extends React.Component {
         />
         <h1>About</h1>
         <p>I am Jenssen Lee Kang Yuan, a Software Engineer in Singapore. 
-          This website is meant to consolidate my tech adventures in the form of blog posts, 
+          I believe that Software is Eating the World...</p> 
+
+        <h3>*Writing in progress*</h3>
+
+        <p>This site is meant to consolidate writings of my experience 
+          and lessons learnt from doing tech stuff, 
           and to display any projects I have done.</p>
         <p>
           <span>
@@ -31,10 +36,13 @@ class BlogIndex extends React.Component {
             Wordpress: <a href="https://jenlky.wordpress.com/">@jenlky</a>&nbsp; 
           </span>
         </p>
-        <p>At the time of writing, I'm doing week 3&nbsp;  
-          <a href="https://www.coursera.org/learn/algorithms-part1/home/welcome">Princeton Algorithms</a> which is in Java
-          (<a href="https://github.com/helplah/princeton-algorithms">Github repo</a>);
-          while waiting to join ThoughtWorks JumpStart (a three months coding bootcamp) in May. 
+        <p>I'm familiar with HTML, CSS, SASS, BootStrap, JavaScript, jQuery, React, React-Router, Redux, 
+          &nbsp;VueJS, Material-UI, Nodejs, MongoDB and git.</p>
+        <p>At the time of writing, I'm on week 3 of&nbsp; 
+          <a href="https://www.coursera.org/learn/algorithms-part1/home/welcome">Princeton Algorithms</a> 
+          (<a href="https://github.com/helplah/princeton-algorithms">Github repo</a>)
+          a Coursera MOOC that teaches in Java;
+          while waiting to join ThoughtWorks JumpStart, a three months coding bootcamp, in May. 
         </p>
         <NavLinks />
       </Layout>
