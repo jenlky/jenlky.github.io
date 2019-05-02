@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import NavLinks from "../components/navLinks"
 
-class BlogIndex extends React.Component {
+class Projects extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -17,7 +17,6 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <h1>Projects</h1>
-        <h3>*Writing & editing in progress*</h3>
         <ul>
           <li>
             <p>
@@ -38,7 +37,7 @@ class BlogIndex extends React.Component {
           </li>
           <li>
             <p>
-              <a href="https://www.jenlky.com/tribute-page/">Tribute Page</a> -
+              <a href="https://helplah.github.io/tribute-page/">Tribute Page</a> -
               Built as a tribute to Elon Musk with a timeline of his life. 
               I chose Elon Musk because I admire and respect his tenacity, work ethics and drive towards serial entrepreneurship. 
               Most importantly, I'm impressed and inspired by his motivation for doing all these things - 
@@ -47,20 +46,20 @@ class BlogIndex extends React.Component {
           </li>
           <li>
             <p>
-              <a href="https://www.jenlky.com/twitch-tv/">Twitch TV</a> -
+              <a href="https://helplah.github.io/twitch-tv/">Twitch TV</a> -
               Tracks twitch streamers and shows what they're streaming if they're online. Allows user to filter based on status.
             </p>
           </li>
           <li>
             <p>
-              <a href="https://www.jenlky.com/react-wikipedia/">React Wikipedia</a> -
+              <a href="https://helplah.github.io/react-wikipedia/">React Wikipedia</a> -
               Searches the typed word at Wikipedia and returns the top 10 results. 
               When you click on any of the results, it directs you to the said result.
             </p>
           </li>
           <li>
             <p>
-              <a href="https://www.jenlky.com/react-quote-machine/">React Quote Machine</a> -
+              <a href="https://helplah.github.io/react-quote-machine/">React Quote Machine</a> -
               Generates a new design quote when it's clicked. Allows user to tweet said quote.
             </p>
           </li>
@@ -71,7 +70,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default Projects
 
 export const pageQuery = graphql`
   query {
