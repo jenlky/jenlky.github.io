@@ -37,8 +37,11 @@ p:nth-last-of-type(1) {
 footer nav ul {
   display: block;
   list-style: none;
-  margin-bottom: 0;
   margin-left: 0;
+}
+
+ul {
+  margin-bottom: 0;
 }
 
 footer nav ul li {
