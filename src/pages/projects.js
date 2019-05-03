@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -20,11 +20,13 @@ class Projects extends React.Component {
         <ul>
           <li>
             <p>
+              {/* <Link to ="/shoplah">ShopLah</Link>*/}
+              {/*
               <a href="https://jenlky-shopping-cart.herokuapp.com/">ShopLah</a> - 
               Retrieves and displays products from Express API. Users must log in to add, remove products and change item quantity. 
               When user logins, retrieve added products from database. Limits access to cart, profile and checkout page to logged in users. 
-              Displays and tallies the total quantity and price.
-            </p>
+              Displays and tallies the total quantity and price. */}
+              </p>
           </li>
           <li>
             <p>
