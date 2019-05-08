@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Technical blog`,
+    title: `Jenssen Lee`,
     author: `Jenssen Lee`,
-    description: `A technical blog on the problems I faced and how I solved it`,
+    description: `Portfolio and blog of my experience and lessons learnt from doing tech stuff`,
     siteUrl: `https://jenlky.netlify.com/`,
+    /*
     social: {
       twitter: `jenlky`,
       portfolio: `jenlky`,
       github: `helplah`,
-    },
+    }, */
   },
   // pathPrefix for blog posts
   // pathPrefix: `/blog`,

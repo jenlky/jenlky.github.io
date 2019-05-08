@@ -11,6 +11,7 @@ class BlogPostTemplate extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const post = data.markdownRemark
+    // const slug = data.allMarkdownRemark.edges.node.fields.slug;
     // const { previous, next } = data.pageContext
 
     return (
