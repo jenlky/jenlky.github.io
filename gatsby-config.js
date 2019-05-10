@@ -11,8 +11,6 @@ module.exports = {
       github: `helplah`,
     }, */
   },
-  // pathPrefix for blog posts
-  // pathPrefix: `/blog`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

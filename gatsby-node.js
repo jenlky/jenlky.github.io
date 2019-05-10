@@ -22,6 +22,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const projectPost = path.resolve(`./src/templates/project-post.js`)
   
   return graphql(
     `
@@ -57,12 +58,12 @@ exports.createPages = ({ graphql, actions }) => {
       // const next = index === 0 ? null : posts[index - 1].node
 
       const slug = post.node.fields.slug;
-      // const regex = `^\/[^\/]*`;
-      // let path = (slug.match(regex) === `/blog`) ? `blog` : `projects;`
+      const regex = `/^\\/blog/`;
+      let path = slug.match(regex) ? blogPost : projectPost;
   
       createPage({
         path: `${slug}`,
-        component: blogPost,
+        component: path,
         context: {
           slug,
           // previous,

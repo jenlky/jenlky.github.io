@@ -33,7 +33,7 @@ class Projects extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              {/* <small>{node.frontmatter.date}</small> */}
               <p style={{ marginBottom: `21px` }}
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
@@ -51,28 +51,28 @@ class Projects extends React.Component {
 export default Projects
 
 export const pageQuery = graphql`
-query {
-  site {
-    siteMetadata {
-      title
+  query {
+    site {
+      siteMetadata {
+        title
+      }
     }
-  }
-  allMarkdownRemark(
-    filter: { fields : {slug: {regex: "/^\\/projects/" }} }
-    sort: { fields: [frontmatter___date], order: DESC }
-  ) {
-    edges {
-      node {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM Do, YYYY")
-          title
+    allMarkdownRemark(
+      filter: { fields : {slug: {regex: "/^\\/projects/" }} }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM Do, YYYY")
+            title
+          }
         }
       }
     }
   }
-}
 `
