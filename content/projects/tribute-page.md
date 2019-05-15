@@ -4,6 +4,8 @@ date: "2018-03-26"
 tags: ["", "", ""]
 ---
 
+![Tribute Page](../assets/tribute-page-557.png "Tribute Page")
+
 [Tribute Page](https://helplah.github.io/tribute-page/)
 
 Built as a tribute to Elon Musk with a timeline of his life. 
