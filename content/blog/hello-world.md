@@ -18,7 +18,7 @@ https://www.markdownguide.org/basic-syntax
 # h1
 ## h2
 
-== h1 (any number of ==/-- characters)
+== h1 (increment of ==/-- characters)
 -- h2
 
 **Bold**
@@ -36,7 +36,7 @@ Blockquotes:
 > A salted duck egg is a Chinese preserved food product made by soaking duck
 > eggs in brine, or packing each egg in damp, salted charcoal. In Asian
 
-Code: 
+Code:
 `Redux`
 
 ```
@@ -52,10 +52,10 @@ To create code blocks, indent every line of the block by at least four spaces or
 Links:
 [salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg)
 
-Images: 
+Images:
 ![Chinese Salty Egg](./salty_egg.jpg)
 
-Lists: 
+Lists:
 1. Fat
 2. Sugar
 
