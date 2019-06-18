@@ -34,8 +34,10 @@ One way to reorder items is to change its index, or I could loop through and sor
 
 #### Lessons learnt:
 
-<!-- Deep cloning is for -->
+<!-- Deep cloning is only for -->
 
-1. I don't need deep cloning. React keep tracks of object's outer references, it doesn't care about its inner references. Shallow cloning works for my case because it creates an array of objects with different outer reference and the same inner references. After that, all you need to do is trigger a re-rendering with `this.setState({ items: ...this.state.items })`.
+1. I don't need to do deep cloning. React keep tracks of object's outer references, it doesn't care about its inner references. Shallow cloning works for my case because it creates an array of objects with different outer reference and the same inner references. Any mutation happens in the shallow cloned object that has a different reference (or memory address), and not the state itself.
 
-2) Jesstern's feedback - "What if you move the cross from the component ToDoItemRight to ToDoItemLeft then would it still be called ToDoItemRight?" In short, I should name my component based on what it does rather than its positioning...
+Thus, this is in compliant with React's principle of not mutating state directly. After that, all you need to do is trigger a re-rendering with `this.setState({ items: ...this.state.items })`.
+
+2. Jesstern's feedback - "What if you move the cross from the component ToDoItemRight to ToDoItemLeft then would it still be called ToDoItemRight?" In short, I should name my component based on what it does rather than its positioning...
