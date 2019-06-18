@@ -3,22 +3,39 @@ title: Todo List Week 4 (10 - 14 June 2019)
 date: "2019-06-17"
 ---
 
-[Link](https://jumpstart-todo-list.netlify.com/)
+[Todo List](https://jumpstart-todo-list.netlify.com/) was a front-end project I created during Week 4 of JumpStart. The whole week was dedicated for us to build something using what we learnt so far - the only criteria is it must be in React. We presented it on the following Monday morning.
 
-This is about the Todo List website/app that I created during Week 4 of JumpStart. The whole week is dedicated for us to build a front-end project using what we learnt previously - the only criteria is it must be in React.
+### Use Case:
 
-As the weeks went by I realise that my notes from our classes were overwhelming. I was using Google Sheets to take notes because I needed a quick and dirty way to store as much information as possible. However, that didn't afford me a quick overview of each topics.
+My notes from the classes were becoming overwhelming. I was using Google Sheets to take notes because I needed a quick and dirty way to store as much information as possible. It allowed me to use the cells as question and answer, kinda like flashcards. _But it didn't allow me a quick overview of each topic._
 
 <!-- ![My Google Sheets](./salty_egg.jpg) -->
 
-My primary motivation for building this app was to solve this. To create a list of topics and questions to help my revision and learning. It has the following features:
+My primary motivation for building a Todo List was to solve this. To fulfill my requirements it must have:
 
-1. Able to created nested lists
-2. Add, edit and remove those lists
+#### Features (must be able to):
 
-I had a few problems, namely:
+1. Create nested list where each child item is also able to have its own children
+2. Add, edit and remove each list item
+
+<!-- **Good to have:**
+1. Drag and drop to allow user to reorder it -->
+
+#### Problems faced:
 
 1. How should I design my items state? What should I use? An array of objects or object of objects to represent my nested items?
-2. What should I use for the id of each item object? That which I will use as React keys too.
+2. What about the id of each item object? It has to be unique because I will be using it as React keys too.
 
-I settled with an array of objects because at first I wanted to build a nested todo list whose items are capable of being reordered by drag and drop. Unfortunately, I
+**1 -** I settled with an array of objects because at first I wanted to build a nested todo list whose items are capable of being reordered by drag and drop. However, due to lack of time I had to put it on hold in the interest of getting the bare minimum out first.
+
+One way to reorder items is to change its index, or I could loop through and sort the object based on its keys. Changing the index seemed less expensive so I chose that.
+
+**2 -** I thought of using `id: 1` for the parent item, `id: 1-1` for its child and `id: 1-1-2` for its grandchild. The idea is to keep concatenating `-number` to represent its children. But what if I implemented drag and drop? In that case, what's the point of using `-number` to denote its child relationship, when the user is allowed to drag a child item to its parent level? Thereby negating any benefits from using `-number` to represent the child relationship.
+
+#### Lessons learnt:
+
+<!-- Deep cloning is for -->
+
+1. I don't need deep cloning. React keep tracks of object's outer references, it doesn't care about its inner references. Shallow cloning works for my case because it creates an array of objects with different outer reference and the same inner references. After that, all you need to do is trigger a re-rendering with `this.setState({ items: ...this.state.items })`.
+
+2) Jesstern's feedback - "What if you move the cross from the component ToDoItemRight to ToDoItemLeft then would it still be called ToDoItemRight?" In short, I should name my component based on what it does rather than its positioning...
