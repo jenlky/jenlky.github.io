@@ -13,7 +13,9 @@ Week 6 of JumpStart. Elson was teaching until Friday when Angeline taught MySQL.
 - [login-with-cookie-or-jwt-lab](https://github.com/jenlky/login-with-cookie-or-with-jwt-lab)
 - [books-api](https://github.com/jenlky/books-api) - Angeline was doing this with us
 
-We learnt how to use Mongoose, an object modeling for MongoDB. We learnt that to create a Model you have to write a Schema first.
+We learnt how to use Mongoose, an object modeling for MongoDB. It is only capable of doing whatever the Mongo Shell does, however it makes using MongoDB so much easier. For example, in Mongo Shell you have to use $set operator to avoid overwriting certain fields. However, the default behaviour in Mongoose is to use $set operator.
+
+We learnt that to create a Model you have to write a Schema first:
 
 **todo.model.js**
 
@@ -44,6 +46,13 @@ const myTodo = new TodoModel({ name: "" + Math.random(), done: true });
 myTodo.save();
 ```
 
-We played with a bunch of queries that can be found [here](https://mongoosejs.com/docs/queries.html). Next we did my-pokemon where we tried to create from scratch routes to database with tests on both the routes and queries. This was difficult.
+We played with a bunch of queries that can be found [here](https://mongoosejs.com/docs/queries.html). Next we did `my-pokemon` where we created routes from scratch to database with tests on both the routes and queries. That was difficult and took me a few hours.
 
-Next Elson taught us queries
+Next we talked about symmetric encryption, asymmetric encryption and hashing.
+
+we did `mongodb-password-encryption-lab` where we progressively went through different stages of encryption for Authorisation:
+
+- `simpleSignUp, simpleLogin`
+- `hashSignUp, hashLogin`
+- `hashWithSecretSignUp, hashWithSecretLogin`
+- `hashSaltSignUp, hashSaltLogin`
