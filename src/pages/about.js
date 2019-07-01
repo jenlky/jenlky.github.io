@@ -23,8 +23,9 @@ class About extends React.Component {
           Before that, I had been learning for over a year on my own.
         </p>
         <p>
-          I chose to work with software because I believe that Software is
-          Eating the World and I want to be a part of it.
+          I choose to work with software because Software is Eating the World,
+          and I want to participate in it. I like to solve real problems and
+          work in a team of individuals dedicated to the craft.
         </p>
         <p>
           This site is meant to consolidate writings of my experience and
@@ -51,9 +52,9 @@ class About extends React.Component {
           </span>
         </p>
         <p>
-          I'm familiar with HTML, CSS, SASS, BootStrap, JavaScript, jQuery,
+          I'm familiar with HTML, CSS, SASS, BootStrap, ES6 JavaScript, jQuery,
           React, React-Router, Redux, VueJS, Material-UI, Nodejs, Express,
-          MongoDB and git bash.
+          MongoDB and Git Bash.
         </p>
         {/* <p>
           At the time of writing, I'm on week 3 of&nbsp;
