@@ -31,6 +31,10 @@ main {
   align-items: center;
 }
 
+.hire {
+  color: #1eec00;
+}
+
 .stack p:nth-last-of-type(1) {
   margin-bottom: 0;
 }

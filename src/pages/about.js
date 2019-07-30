@@ -18,21 +18,19 @@ class About extends React.Component {
         />
         <h1>About</h1>
         <p>
-          Hi my name is Jenssen Lee Kang Yuan! I'm a Software Engineer
-          <sup> (available for hire)</sup> in Singapore.
+          Hi my name is Jenssen Lee Kang Yuan! I'm a Software Engineer in
+          Singapore who had been programming for over a year and just graduated
+          from ThoughtWorks Jumpstart, a 3 months coding bootcamp.{" "}
+          <sup className="hire"> (Available for hire!)</sup>
         </p>
         <p>
-          I have been programming for over a year before joining ThoughtWorks
-          Jumpstart, a 3 months coding bootcamp.
+          I choose to code because software is eating the world and I want to
+          partake in it. I enjoy solving problems and working with individuals
+          dedicated to their craft.
         </p>
         <p>
-          Software is eating the world, I choose to code because I want to
-          participate in it. I want to solve real problems and work with
-          individuals dedicated to their craft.
-        </p>
-        <p>
-          This site is meant to consolidate writings of my tech/coding
-          experience and showcase my prior projects. You can contact me at&nbsp;
+          This site is meant to consolidate my coding/tech experience and
+          showcase my prior projects. You can contact me at&nbsp;
           <span>
             <a href="mailto:jenssen.lee@gmail.com">jenssen.lee@gmail.com</a>
           </span>
