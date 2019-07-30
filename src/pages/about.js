@@ -18,19 +18,21 @@ class About extends React.Component {
         />
         <h1>About</h1>
         <p>
-          I am Jenssen Lee Kang Yuan, a Software Engineer in Singapore.
-          Currently enrolled in Thoughtworks JumpStart, a 3 months bootcamp.
-          Before that, I had been learning for over a year on my own.
+          Hi my name is Jenssen Lee Kang Yuan! I'm a Software Engineer
+          <sup> (available for hire)</sup> in Singapore.
         </p>
         <p>
-          I choose to work with software because Software is Eating the World,
-          and I want to participate in it. I like to solve real problems and
-          work in a team of individuals dedicated to the craft.
+          I have been programming for over a year before joining ThoughtWorks
+          Jumpstart, a 3 months coding bootcamp.
         </p>
         <p>
-          This site is meant to consolidate writings of my experience and
-          lessons learnt from doing tech stuff, and to showcase my prior
-          projects. You can contact me at&nbsp;
+          Software is eating the world, I choose to code because I want to
+          participate in it. I want to solve real problems and work with
+          individuals dedicated to their craft.
+        </p>
+        <p>
+          This site is meant to consolidate writings of my tech/coding
+          experience and showcase my prior projects. You can contact me at&nbsp;
           <span>
             <a href="mailto:jenssen.lee@gmail.com">jenssen.lee@gmail.com</a>
           </span>
@@ -42,7 +44,7 @@ class About extends React.Component {
         </p>
         <p className="social-media">
           <span>
-            Github: <a href="https://github.com/helplah">@helplah</a>
+            Github: <a href="https://github.com/jenlky">@jenlky</a>
           </span>
           <span>
             Twitter: <a href="https://twitter.com/Jenlky">@jenlky</a>
@@ -51,11 +53,29 @@ class About extends React.Component {
             LinkedIn: <a href="https://www.linkedin.com/in/jenlky/">@jenlky</a>
           </span>
         </p>
-        <p>
-          I'm familiar with HTML, CSS, SASS, BootStrap, ES6 JavaScript, jQuery,
-          React, React-Router, Redux, VueJS, Material-UI, Nodejs, Express,
-          MongoDB and Git Bash.
-        </p>
+        <div className="stack">
+          <p>
+            <span>Front-end: </span>
+            React, React-router, Redux, Material UI, Vue, JavaScript, HTML,
+            SCSS, Bootstrap, jQuery
+          </p>
+          <p>
+            <span>Back-end: </span>
+            Express, Mongoose, JSON Web Token, PassportJS
+          </p>
+          <p>
+            <span>Testing: </span>
+            Jest, React Testing Library, Cypress
+          </p>
+          <p>
+            <span>DevOps: </span>
+            CircleCi, Heroku, Netlify
+          </p>
+          <p>
+            <span>Misc: </span>
+            Java, Git for version control
+          </p>
+        </div>
         {/* <p>
           At the time of writing, I'm on week 3 of&nbsp;
           <a href="https://www.coursera.org/learn/algorithms-part1/home/welcome">

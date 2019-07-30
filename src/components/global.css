@@ -8,7 +8,8 @@ html body {
   font-family: 'Open Sans', sans-serif !important;
 } */
 
-h1, h3 {
+h1,
+h3 {
   font-weight: 600;
   margin-top: 48px;
   margin-bottom: 24px;
@@ -30,8 +31,13 @@ main {
   align-items: center;
 }
 
-p:nth-last-of-type(1) {
+.stack p:nth-last-of-type(1) {
   margin-bottom: 0;
+}
+
+.stack span {
+  font-weight: 700;
+  font-style: italic;
 }
 
 footer nav ul {
@@ -54,13 +60,17 @@ footer nav ul li:not(:last-child) {
 
 footer {
   margin: 50px;
-} 
+}
+
+.social-media {
+  margin-bottom: 1.75rem;
+}
 
 .social-media span:not(:nth-last-of-type(1)) {
   margin-right: 16px;
 }
 
-@media(max-width: 525px) {
+@media (max-width: 525px) {
   .social-media span {
     display: block;
   }
