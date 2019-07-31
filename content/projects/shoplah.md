@@ -6,13 +6,14 @@ tags: ["Shoplah", ""]
 
 ![ShopLah front page](../assets/shoplah.webp "ShopLah front page")
 
-[Link](https://jenlky-shopping-cart.herokuapp.com/)
+[Link](https://shoplah.herokuapp.com/)
 
-Retrieves and displays products from Express API. Users must log in to add, remove products and change item quantity. 
-When user logins, retrieve added products from database. Limits access to cart, profile and checkout page to logged in users. 
-Displays and tallies the total quantity and price. 
+Retrieves and displays products from Express API. Users must log in to add, remove products and change item quantity.
+When user logins, retrieve added products from database. Limits access to cart, profile and checkout page to logged in users.
+Displays and tallies the total quantity and price.
 
 ###Accomplishments###
+
 - Created REST API endpoint
 - Tested /GET routes
 - React, Redux and Material-UI front-end

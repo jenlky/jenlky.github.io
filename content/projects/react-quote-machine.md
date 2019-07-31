@@ -6,11 +6,12 @@ tags: ["", "", ""]
 
 ![React Quote Machine](../assets/react-quote-machine.png "React Quote Machine")
 
-[React Quote Machine](https://helplah.github.io/react-quote-machine/)
+[React Quote Machine](https://jenlky.github.io/react-quote-machine/)
 
 Generates a new design quote when it's clicked. Allows user to tweet said quote.
 
 ###Accomplishments###
+
 - Create React App boilerplate
 - Responsive and mobile friendly
 - Consumed Quotes on Design API
