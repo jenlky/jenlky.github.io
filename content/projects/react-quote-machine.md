@@ -8,6 +8,8 @@ tags: ["", "", ""]
 
 [React Quote Machine](https://jenlky.github.io/react-quote-machine/)
 
+[Github](https://github.com/jenlky/react-quote-machine)
+
 Generates a new design quote when it's clicked. Allows user to tweet said quote.
 
 ###Accomplishments###

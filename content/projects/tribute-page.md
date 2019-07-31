@@ -8,6 +8,8 @@ tags: ["", "", ""]
 
 [Tribute Page](https://jenlky.github.io/tribute-page/)
 
+[Github](https://github.com/jenlky/tribute-page)
+
 Built as a tribute to Elon Musk with a timeline of his life.
 I chose Elon Musk because I admire and respect his tenacity, work ethics and drive towards serial entrepreneurship.
 Most importantly, I'm impressed and inspired by his motivation for doing all these things -

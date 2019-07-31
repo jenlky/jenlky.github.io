@@ -6,7 +6,9 @@ tags: ["Shoplah", ""]
 
 ![ShopLah front page](../assets/shoplah.webp "ShopLah front page")
 
-[Link](https://shoplah.herokuapp.com/)
+[Shoplah](https://shoplah.herokuapp.com/)
+
+[Github](https://github.com/jenlky/shoplah)
 
 Retrieves and displays products from Express API. Users must log in to add, remove products and change item quantity.
 When user logins, retrieve added products from database. Limits access to cart, profile and checkout page to logged in users.
