@@ -7,12 +7,13 @@ import { rhythm } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    // const { location, title } = this.props;
+    const { children } = this.props
     // const rootPath = `${__PATH_PREFIX__}/`
     // const { author } = data.site.siteMetadata
     let header
 
-    {/*
+    /*
     if (location.pathname === rootPath) {
       header = (
         <h1
@@ -55,12 +56,12 @@ class Layout extends React.Component {
           </Link>
         </h3>
       )
-    } */}
-    
-    header = (data) => {
+    } */
+
+    header = data => {
       return (
-        <Link 
-          to='/'
+        <Link
+          to="/"
           style={{
             textDecoration: `none`,
             color: `white`,
@@ -82,12 +83,12 @@ class Layout extends React.Component {
               borderRadius: `50%`,
             }}
           />
-        </Link> 
-      );
+        </Link>
+      )
     }
-      
+
     return (
-      <StaticQuery 
+      <StaticQuery
         query={layoutQuery}
         render={data => {
           return (
@@ -110,7 +111,7 @@ class Layout extends React.Component {
           )
         }}
       />
-    );
+    )
   }
 }
 
