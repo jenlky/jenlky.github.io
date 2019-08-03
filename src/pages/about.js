@@ -24,7 +24,7 @@ class About extends React.Component {
           <sup className="hire"> (Available for hire!)</sup>
         </p>
         <p>
-          I choose to code because software is eating the world and I want to
+          I code because software is eating the world and I want to
           partake in it. I enjoy solving problems and working with individuals
           dedicated to their craft.
         </p>
