@@ -5,25 +5,39 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const fileNode = getNode(node.parent);
+    const fileNode = getNode(node.parent)
     const value = createFilePath({ node, getNode })
 
-    const parent = fileNode.sourceInstanceName;
-    let basePath = (parent === `blog`) ? `blog` : `projects`
-    
+    const parent = fileNode.sourceInstanceName
+    // let basePath = parent === `blog` ? `blog` : `projects`
+
+    const blog = "blog"
+    const projects = "projects"
+    const logs = "logs"
+
+    let basePath
+    switch (parent) {
+      case blog:
+        basePath = blog
+        break
+      case projects:
+        basePath = projects
+        break
+      case logs:
+        basePath = logs
+        break
+    }
+
     createNodeField({
       name: `slug`,
       node,
       value: `/${basePath}${value}`,
-    })  
+    })
   }
 }
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  const projectPost = path.resolve(`./src/templates/project-post.js`)
-  
   return graphql(
     `
       {
@@ -45,22 +59,32 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `
   ).then(result => {
-    console.log(JSON.stringify(result, null, 4));
+    console.log(JSON.stringify(result, null, 4))
 
     if (result.errors) {
       throw result.errors
     }
 
-    // Create blog and projects posts.
+    const blogPost = path.resolve(`./src/templates/blog-post.js`)
+    const projectPost = path.resolve(`./src/templates/project-post.js`)
+    const logPost = path.resolve(`./src/templates/log-post.js`)
+
+    // Create blog, project and log posts.
     const posts = result.data.allMarkdownRemark.edges
     posts.forEach((post, index) => {
       // const previous = index === posts.length - 1 ? null : posts[index + 1].node
       // const next = index === 0 ? null : posts[index - 1].node
 
-      const slug = post.node.fields.slug;
-      const regex = `/^\\/blog/`;
-      let path = slug.match(regex) ? blogPost : projectPost;
-  
+      const slug = post.node.fields.slug
+      let path = ""
+      if (/^\/blog/.test(slug)) {
+        path = blogPost
+      } else if (/^\/projects/.test(slug)) {
+        path = projectPost
+      } else if (/^\/logs/.test(slug)) {
+        path = logPost
+      }
+
       createPage({
         path: `${slug}`,
         component: path,

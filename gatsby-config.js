@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Jenssen Lee`,
     author: `Jenssen Lee`,
-    description: `Portfolio and blog of my experience and lessons learnt from doing tech stuff`,
+    description: `Blog on my coding and tech experience`,
     siteUrl: `https://jenlky.netlify.com/`,
     /*
     social: {
@@ -34,6 +34,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/logs`,
+        name: `logs`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -51,7 +58,7 @@ module.exports = {
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`
+          `gatsby-remark-smartypants`,
         ],
       },
     },
