@@ -55,11 +55,12 @@ Links:
 Images:
 ![Chinese Salty Egg](./salty_egg.jpg)
 
-Lists:
+Ordered lists:
 1. Fat
 2. Sugar
 
--Sulfur
--Ammonia
-  -Bomb
+Unordered list:
+- Sulfur
+* Ammonia
+  + Bomb
 -->

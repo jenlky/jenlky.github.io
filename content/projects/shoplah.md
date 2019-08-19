@@ -1,7 +1,7 @@
 ---
 title: ShopLah
 date: "2019-04-04"
-tags: ["Shoplah", ""]
+tags: ["Shoplah", "Express", "Mongoose"]
 ---
 
 ![ShopLah front page](../assets/shoplah.webp "ShopLah front page")
@@ -16,10 +16,10 @@ Displays and tallies the total quantity and price.
 
 ###Accomplishments###
 
+- _Frontend:_ React, Redux and Material-UI
+- _Backend:_ Express and Mongoose
 - Created REST API endpoint
 - Tested /GET routes
-- React, Redux and Material-UI front-end
-- Node.js and MongoDB back-end
 - User authentication with passport.js, passport-auth0 and express-session
 - Responsive and mobile friendly
 - Deployed to Heroku successfully
