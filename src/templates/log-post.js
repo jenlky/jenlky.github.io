@@ -19,17 +19,6 @@ class LogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <h2>{post.frontmatter.title}</h2>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-            alignSelf: `flex-start`,
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <NavLink />
       </Layout>
