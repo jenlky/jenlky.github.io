@@ -16,7 +16,7 @@ class Projects extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={[`projects`, `portfolio`, `javascript`, `react`]}
         />
         <h1>Projects</h1>
         {posts.map(({ node }) => {
@@ -34,7 +34,8 @@ class Projects extends React.Component {
                 </Link>
               </h3>
               {/* <small>{node.frontmatter.date}</small> */}
-              <p style={{ marginBottom: `21px` }}
+              <p
+                style={{ marginBottom: `21px` }}
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
@@ -58,7 +59,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fields : {slug: {regex: "/^\\/projects/" }} }
+      filter: { fields: { slug: { regex: "/^/projects/" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

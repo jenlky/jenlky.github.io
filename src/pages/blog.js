@@ -14,10 +14,7 @@ class Blog extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-        />
+        <SEO title="All posts" keywords={[`blog`, `javascript`, `react`]} />
         <h1>Blog</h1>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
@@ -34,7 +31,8 @@ class Blog extends React.Component {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p style={{ marginBottom: `21px` }}
+              <p
+                style={{ marginBottom: `21px` }}
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
@@ -58,7 +56,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fields : {slug: {regex: "/^\\/blog/" }} }
+      filter: { fields: { slug: { regex: "/^/blog/" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
