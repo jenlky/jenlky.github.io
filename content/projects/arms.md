@@ -20,7 +20,9 @@ ARMS help ThoughtWorks Singapore manage housing leases to foreign employees who 
 Client was using spreadsheet until we built a centralised system to allocate occupants to apartments and vice versa. Client can now easily generate reports and track expenses.
 
 ###Solution###
-Since we only had about 3 weeks to finish it, we had to focus on the necessary features for MVP. Our MVP allow the user to create apartments and occupants, and allocate occupants to apartments and vice versa.
+Our group project was for 3 weeks. Since we had limited time, we had to ascertain the necessary features our Minimum Viable Product (MVP) should deliver to provide maximum utility to the user. Afterwards, we slotted them into each sprint based on our velocity.
+
+Our MVP is a centralised system which allows the user to create apartments and occupants, and allocate occupants to apartments and vice versa.
 
 ####Stack####
 
@@ -33,6 +35,7 @@ Since we only had about 3 weeks to finish it, we had to focus on the necessary f
 ####Accomplishments####
 
 - Practised Test Driven Development (TDD) and followed Agile practices
-- Pair programmed every day, and swapped pair frequently
-- Trunk based development: everyone worked on master branch instead of creating feature branches
+- Brainstormed user stories, decided on MVP, estimated complexity of each card and our velocity, slotted the user stories into our sprints
+- Pair programmed every day and swapped pairs frequently; rotated and took turns to be BA/QA
+- Trunk based development: everyone worked on master branch instead of creating new feature branches
 - Both frontend and backend deployed to Heroku
