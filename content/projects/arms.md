@@ -14,23 +14,25 @@ Arms is the frontend, while Legs is the backend.
 
 [Legs github](https://github.com/armadillo-apps/legs)
 
-##Problem##
-ARMS help ThoughtWorks Singapore manage housing leases
-to foreign employees who travel to Singapore for projects.
+###Problem###
+ARMS help ThoughtWorks Singapore manage housing leases to foreign employees who travel to Singapore for projects.
 
-Client was using spreadsheet until we built a centralised
-system to allocate occupants to apartments and vice versa.
-Client can now easily generate reports and track expenses
+Client was using spreadsheet until we built a centralised system to allocate occupants to apartments and vice versa. Client can now easily generate reports and track expenses.
 
-##Solution##
+###Solution###
 Since we only had about 3 weeks to finish it, we had to focus on the necessary features for MVP. Our MVP allow the user to create apartments and occupants, and allocate occupants to apartments and vice versa.
 
-###Accomplishments###
+####Stack####
 
-- _Frontend:_ React
+- _Frontend:_ React, Proptypes
 - _Backend:_ Express, Mongoose
+- _Testing:_ Jest, Jest-MongoDB, React Testing Library, Cypress for automated end-to-end testing
+- _DevOps:_ CircleCi, Heroku, Netlify
+- _Misc:_ Axios, CORS, Moment, Faker for faking test data
+
+####Accomplishments####
+
 - Practised Test Driven Development (TDD) and followed Agile practices
 - Pair programmed every day, and swapped pair frequently
 - Trunk based development: everyone worked on master branch instead of creating feature branches
-- Built with Jest, React Testing Library and Cypress for automated end-to-end testing
 - Both frontend and backend deployed to Heroku
