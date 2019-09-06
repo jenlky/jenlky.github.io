@@ -6,7 +6,7 @@ tags: ["Todo List", "Full stack", "React"]
 
 <!-- ![ShopLah front page](../assets/shoplah.webp "ShopLah front page") -->
 
-[Todo List](https://dashboard.heroku.com/apps/jumpstart-todo-list)
+[Todo List](https://jumpstart-todo-list.netlify.com/)
 
 [Github](https://github.com/jenlky/react-app-todo-list)
 

@@ -6,9 +6,11 @@ tags: ["Arms", "Legs", "Full stack"]
 
 <!-- ![ShopLah front page](../assets/shoplah.webp "ShopLah front page") -->
 
-Arms is the frontend, while Legs is the backend.
+Arms is the frontend, while Legs is the backend and the server.
 
-[ARMS](https://dashboard.heroku.com/apps/jumpstart-todo-list)
+[ARMS](https://demo-armadillo-arms.herokuapp.com/)
+
+[LEGS](https://demo-armadillo-legs.herokuapp.com/)
 
 [Arms github](https://github.com/armadillo-apps/arms2)
 
