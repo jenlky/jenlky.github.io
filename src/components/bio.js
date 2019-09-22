@@ -37,23 +37,6 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            {/* 
-            <p>
-              Written by <strong>{author}</strong> who lives in Singapore and is currently 
-              looking for work!
-              {` `}
-              <a href={`https://${social.portfolio}.com/`}>
-                Portfolio
-              </a>
-              <span> </span>
-              <a href={`https://github.com/${social.github}`}>
-                Github
-              </a>
-              <span> </span>
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Twitter
-              </a>
-            </p> */}
           </div>
         )
       }}
