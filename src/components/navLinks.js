@@ -12,9 +12,6 @@ const NavLinks = () => {
           <Link to="/blog">Blog</Link>
         </li>
         <li>
-          <Link to="/logs">Logs</Link>
-        </li>
-        <li>
           <Link to="/projects">Projects</Link>
         </li>
       </ul>
