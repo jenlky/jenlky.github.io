@@ -2,26 +2,27 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 import "./global.css"
+import NavLinks from "../components/navLinks"
 
 class Layout extends React.Component {
   render() {
     const { children } = this.props
+    console.log("children", children)
 
     return (
       <StaticQuery
         query={layoutQuery}
         render={data => {
           return (
-            <div
+            <main
               style={{
-                marginLeft: `auto`,
-                marginRight: `auto`,
-                maxWidth: rhythm(24),
-                padding: `${rhythm(1.5)} ${rhythm(3 / 4)} 0`, // 42px 21px 0
+                margin: `${rhythm(1.3)} ${rhythm(1)}`,
               }}
+              className="main"
             >
-              <main>{children}</main>
-            </div>
+              <div className="content">{children}</div>
+              <NavLinks />
+            </main>
           )
         }}
       />

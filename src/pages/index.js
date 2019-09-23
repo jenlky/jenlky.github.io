@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import NavLinks from "../components/navLinks"
 
 class Index extends React.Component {
   render() {
@@ -17,8 +16,7 @@ class Index extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <h1>Jenssen Lee</h1>
-        <p>Software Engineer</p>
-        <NavLinks />
+        <p style={{ textAlign: "center" }}>Software Engineer</p>
       </Layout>
     )
   }
