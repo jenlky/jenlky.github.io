@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
 
@@ -13,26 +13,15 @@ class About extends React.Component {
 
     let header = data => {
       return (
-        <Link
-          to="/"
+        <Image
+          fixed={data.avatar.childImageSharp.fixed}
+          alt={data.site.siteMetadata.author}
           style={{
-            textDecoration: `none`,
-            color: `white`,
+            marginRight: rhythm(1 / 2),
+            marginBottom: 0,
+            minWidth: 50,
           }}
-          activeStyle={{
-            textDecoration: `none`,
-          }}
-        >
-          <Image
-            fixed={data.avatar.childImageSharp.fixed}
-            alt={data.site.siteMetadata.author}
-            style={{
-              marginRight: rhythm(1 / 2),
-              marginBottom: 0,
-              minWidth: 50,
-            }}
-          />
-        </Link>
+        />
       )
     }
 
@@ -60,8 +49,7 @@ class About extends React.Component {
           their craft.
         </p>
         <p>
-          This site is meant to consolidate my coding/tech experience and
-          showcase my prior projects. You can contact me at&nbsp;
+          You can contact me at&nbsp;
           <span>
             <a href="mailto:jenssen.lee@gmail.com">jenssen.lee@gmail.com</a>
           </span>

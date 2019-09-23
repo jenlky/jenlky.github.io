@@ -7,7 +7,6 @@ import NavLinks from "../components/navLinks"
 class Layout extends React.Component {
   render() {
     const { children } = this.props
-    console.log("children", children)
 
     return (
       <StaticQuery
