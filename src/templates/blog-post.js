@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import NavLink from "../components/navLinks"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
@@ -33,7 +32,6 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <NavLink />
         {/*
         <hr
           style={{

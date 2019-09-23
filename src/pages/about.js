@@ -5,7 +5,6 @@ import { rhythm } from "../utils/typography"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import NavLinks from "../components/navLinks"
 
 class About extends React.Component {
   render() {
@@ -85,7 +84,6 @@ class About extends React.Component {
             LinkedIn: <a href="https://www.linkedin.com/in/jenlky/">@jenlky</a>
           </span>
         </p>
-        <NavLinks />
       </Layout>
     )
   }

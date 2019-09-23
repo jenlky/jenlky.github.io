@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import NavLink from "../components/navLinks"
 import SEO from "../components/seo"
 
 class ProjectPostTemplate extends React.Component {
@@ -20,7 +19,6 @@ class ProjectPostTemplate extends React.Component {
         />
         <h2>{post.frontmatter.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <NavLink />
       </Layout>
     )
   }
