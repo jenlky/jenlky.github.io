@@ -30,10 +30,6 @@ class About extends React.Component {
               marginRight: rhythm(1 / 2),
               marginBottom: 0,
               minWidth: 50,
-              borderRadius: `100%`,
-            }}
-            imgStyle={{
-              borderRadius: `50%`,
             }}
           />
         </Link>
@@ -47,13 +43,15 @@ class About extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <h1>About</h1>
-        <div>
-          <p>
-            Hi my name is Jenssen Lee Kang Yuan! I'm a Software Engineer in
-            Singapore who had been programming for over a year and just
-            graduated from ThoughtWorks Jumpstart, a 3 months coding bootcamp.{" "}
-            <sup className="hire"> (Available for hire!)</sup>
-          </p>
+        <div className="about-intro">
+          <div>
+            <p>Hi, my name is Jenssen Lee Kang Yuan!</p>
+            <p>
+              I'm a Software Engineer in Singapore who has been programming for
+              over a year and just graduated from ThoughtWorks Jumpstart, a 3
+              months coding bootcamp.
+            </p>
+          </div>
           <header>{header(data)}</header>
         </div>
         <p>
@@ -95,7 +93,7 @@ export const pageQuery = graphql`
   query {
     avatar: file(absolutePath: { regex: "/profile-pic.png/" }) {
       childImageSharp {
-        fixed(width: 120, height: 120) {
+        fixed(width: 130, height: 130) {
           ...GatsbyImageSharpFixed
         }
       }

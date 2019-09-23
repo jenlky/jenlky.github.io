@@ -15,7 +15,7 @@ class Index extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <h1>Jenssen Lee</h1>
+        <h1 style={{ margin: "0.8rem 0" }}>Jenssen Lee</h1>
         <p style={{ textAlign: "center" }}>Software Engineer</p>
       </Layout>
     )

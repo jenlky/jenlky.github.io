@@ -9,9 +9,10 @@ html body {
 } */
 
 h1,
+h2,
 h3 {
   font-weight: 600;
-  margin: 0 0;
+  margin-top: 3rem;
 }
 
 h1,
@@ -22,6 +23,10 @@ h2 {
 h3,
 p {
   text-align: left;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 header {
@@ -44,10 +49,6 @@ header {
   margin-right: auto;
 }
 
-.content > p {
-  margin: 0;
-}
-
 .content > div {
   text-align: left;
 }
@@ -55,6 +56,7 @@ header {
 .menu {
   align-self: flex-start;
   text-align: right;
+  font-size: 14px;
 }
 
 .menu ul {
@@ -68,10 +70,6 @@ header {
   margin-bottom: 0;
 }
 
-.hire {
-  color: #1eec00;
-}
-
 .stack p:nth-last-of-type(1) {
   margin-bottom: 0;
 }
@@ -82,6 +80,7 @@ header {
 }
 
 .social-media {
+  text-align: center;
   margin-bottom: 1.75rem;
 }
 
@@ -98,4 +97,14 @@ header {
     margin-right: 0 !important;
     margin-bottom: 12px;
   }
+}
+
+.about-intro {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.about-hire {
+  color: #1eec00;
+  margin-right: 10px;
 }
