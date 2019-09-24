@@ -34,7 +34,7 @@ class About extends React.Component {
         <h1>About</h1>
         <div className="about-intro">
           <div>
-            <p>Hi, my name is Jenssen Lee Kang Yuan!</p>
+            <p>Hi, my full name is Jenssen Lee Kang Yuan! </p>
             <p>
               I'm a Software Engineer in Singapore who has been programming for
               over a year and just graduated from ThoughtWorks Jumpstart, a 3

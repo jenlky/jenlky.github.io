@@ -29,9 +29,53 @@ p {
   margin-bottom: 1rem;
 }
 
-header {
-  display: flex;
-  justify-content: center;
+.home-name {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.home-job-title {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.home-hire {
+  color: #1eec00;
+}
+
+.recent-essays {
+  margin-bottom: 1rem;
+}
+
+.essays {
+  padding: 1.05rem 1.2rem;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.essays:hover {
+  /* cursor: pointer; */
+  background-color: rgb(248, 248, 248);
+}
+
+.essays-uri {
+  box-shadow: none;
+}
+
+.view-archived-wrapper {
+  text-align: center !important;
+  margin-top: 2rem;
+}
+
+.view-archived {
+  border: 1px solid;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 0.6rem;
+  box-shadow: none;
+}
+
+.view-archived:active {
+  text-decoration: none;
 }
 
 .main {
@@ -81,7 +125,7 @@ header {
 
 .social-media {
   text-align: center;
-  margin-bottom: 1.75rem;
+  margin: 1.75rem 0;
 }
 
 .social-media span:not(:nth-last-of-type(1)) {
