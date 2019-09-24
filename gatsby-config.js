@@ -8,7 +8,7 @@ module.exports = {
     social: {
       twitter: `jenlky`,
       portfolio: `jenlky`,
-      github: `helplah`,
+      github: `jenlky`,
     }, */
   },
   plugins: [
@@ -31,13 +31,6 @@ module.exports = {
       options: {
         path: `${__dirname}/content/projects`,
         name: `projects`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/logs`,
-        name: `logs`,
       },
     },
     {

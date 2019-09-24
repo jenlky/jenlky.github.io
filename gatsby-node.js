@@ -13,7 +13,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     const blog = "blog"
     const projects = "projects"
-    const logs = "logs"
 
     let basePath
     switch (parent) {
@@ -22,9 +21,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         break
       case projects:
         basePath = projects
-        break
-      case logs:
-        basePath = logs
         break
     }
 
@@ -67,9 +63,8 @@ exports.createPages = ({ graphql, actions }) => {
 
     const blogPost = path.resolve(`./src/templates/blog-post.js`)
     const projectPost = path.resolve(`./src/templates/project-post.js`)
-    const logPost = path.resolve(`./src/templates/log-post.js`)
 
-    // Create blog, project and log posts.
+    // Create blog and project posts.
     const posts = result.data.allMarkdownRemark.edges
     posts.forEach((post, index) => {
       // const previous = index === posts.length - 1 ? null : posts[index + 1].node
@@ -81,8 +76,6 @@ exports.createPages = ({ graphql, actions }) => {
         path = blogPost
       } else if (/^\/projects/.test(slug)) {
         path = projectPost
-      } else if (/^\/logs/.test(slug)) {
-        path = logPost
       }
 
       createPage({

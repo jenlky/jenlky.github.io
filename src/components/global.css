@@ -9,30 +9,109 @@ html body {
 } */
 
 h1,
+h2,
 h3 {
   font-weight: 600;
-  margin-top: 48px;
-  margin-bottom: 24px;
+  margin-top: 3rem;
 }
 
-h3 {
-  margin-top: 2.5rem;
+h1,
+h2 {
+  text-align: center;
 }
 
-header {
+h3,
+p {
+  text-align: left;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.home-name {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.home-job-title {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.home-hire {
+  color: #1eec00;
+}
+
+.recent-essays {
+  margin-bottom: 1rem;
+}
+
+.essays {
+  padding: 1.05rem 1.2rem;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.essays:hover {
+  /* cursor: pointer; */
+  background-color: rgb(248, 248, 248);
+}
+
+.essays-uri {
+  box-shadow: none;
+}
+
+.view-archived-wrapper {
+  text-align: center !important;
+  margin-top: 2rem;
+}
+
+.view-archived {
+  border: 1px solid;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 0.6rem;
+  box-shadow: none;
+}
+
+.view-archived:active {
+  text-decoration: none;
+}
+
+.main {
+  height: fit-content;
   display: flex;
-  justify-content: center;
-}
-
-main {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: center;
 }
 
-.hire {
-  color: #1eec00;
+.content {
+  text-align: center;
+  width: 41rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content > div {
+  text-align: left;
+}
+
+.menu {
+  align-self: flex-start;
+  text-align: right;
+  font-size: 14px;
+}
+
+.menu ul {
+  display: block;
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.menu ul li {
+  margin-bottom: 0;
 }
 
 .stack p:nth-last-of-type(1) {
@@ -44,30 +123,9 @@ main {
   font-style: italic;
 }
 
-footer nav ul {
-  display: block;
-  list-style: none;
-  margin-left: 0;
-}
-
-ul {
-  margin-bottom: 0;
-}
-
-footer nav ul li {
-  display: inline;
-}
-
-footer nav ul li:not(:last-child) {
-  margin-right: 20px;
-}
-
-footer {
-  margin: 50px;
-}
-
 .social-media {
-  margin-bottom: 1.75rem;
+  text-align: center;
+  margin: 1.75rem 0;
 }
 
 .social-media span:not(:nth-last-of-type(1)) {
@@ -83,4 +141,14 @@ footer {
     margin-right: 0 !important;
     margin-bottom: 12px;
   }
+}
+
+.about-intro {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.about-hire {
+  color: #1eec00;
+  margin-right: 10px;
 }
