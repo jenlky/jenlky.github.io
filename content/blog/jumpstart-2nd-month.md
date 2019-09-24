@@ -1,8 +1,38 @@
 ---
-title: JumpStart Week 6 (24 - 29 June 2019)
-date: "2019-06-29"
+title: JumpStart 2nd Month (17 June - 12 July 2019)
+date: "2019-07-12"
 ---
 
+JumpStart Week 5 (17 - 21 June 2019)
+This is week 5 of JumpStart. Elson is teaching.
+
+Day 19 - Mon, 17 June 2019
+(How web work)
+Web 101
+
+Day 20 - Tue, 18 June 2019
+(Express)
+my-express-app
+express-playground
+express-songs-api (lab 1 - 2)
+express-pizza-app-with-tests
+
+We learnt express and supertest.
+
+Day 21 - Wed, 19 June 2019
+(Express)
+express-songs-api (lab 3 - 6)
+kata-for-fun
+
+Day 22 - Thur, 20 June 2019
+(Express: middleware, using async function, serving static files; MongoDB)
+Mongo Shell??
+
+Day 23 - Fri, 21 June 2019
+(MongoDB, Mongoose, testing by mocking DB)
+jest-mongodb
+
+JumpStart Week 6 (24 - 29 June 2019)
 Week 6 of JumpStart. Elson was teaching until Friday when Angeline taught MySQL.
 
 #### Repos involved:
@@ -56,3 +86,16 @@ we did `mongodb-password-encryption-lab` where we progressively went through dif
 - `hashSignUp, hashLogin`
 - `hashWithSecretSignUp, hashWithSecretLogin`
 - `hashSaltSignUp, hashSaltLogin`
+
+JumpStart Week 7 (1 - 5 July 2019)
+Week 7 of JumpStart.
+
+Monday, 1 July 2019
+books-api
+sequelize-association
+sql-carmen-sandiego
+
+Tuesday, 2 July 2019
+
+Consider creating a backend project week
+JumpStart Week 8 (8 - 12 July 2019)
