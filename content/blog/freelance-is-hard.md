@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Freelance is hard
 date: "2019-05-27"
 ---
@@ -11,4 +11,4 @@ Secondly, I'm not sure if he has found the right person. What I should have done
 
 Maybe I'm not as good at programming as he thinks lol.
 
-He wants to hire
+He wants to hire -->
