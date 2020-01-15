@@ -27,8 +27,8 @@ class Index extends React.Component {
         </p>
         <p>
           This site contains my essays on technology, software development and
-          whatever on my mind at the moment. The projects page holds a portfolio
-          of my prior projects.
+          whatever is on my mind at the moment. The projects page holds a
+          portfolio of my prior projects.
         </p>
         <h3 className="recent-essays">Recent Essays</h3>
         {posts.map(({ node }) => {
