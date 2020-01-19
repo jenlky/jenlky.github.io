@@ -1,5 +1,5 @@
 ---
-title: JumpStart 4th Week Frontend Project (10 - 14 June 2019)
+title: JumpStart Frontend Project
 date: "2019-06-17"
 ---
 
