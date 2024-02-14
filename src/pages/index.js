@@ -80,7 +80,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "Do MMMM YYYY")
+            date(formatString: "DD MMMM YYYY")
             title
           }
         }
