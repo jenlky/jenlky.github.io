@@ -23,7 +23,7 @@ class Index extends React.Component {
         <p>My name is Jenssen Lee or @jenlky on the internet.</p>
         <p>
           I'm a Software Engineer in Singapore.{" "}
-          <sup className="home-hire">(Available for hire!)</sup>
+          <sup className="home-hire">(Available for hire)</sup>
         </p>
         <p>
           This site contains my essays on technology, software development and
