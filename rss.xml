@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jenssen Lee]]></title><description><![CDATA[Blog on my coding and tech experience]]></description><link>https://jenlky.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 14 Feb 2024 05:16:59 GMT</lastBuildDate><item><title><![CDATA[JumpStart by ThoughtWorks review]]></title><description><![CDATA[Yes, I know with the rise of IT in Singapore many coding bootcamps are popping up. This is a long overdued post but I hope it adds to the…]]></description><link>https://jenlky.netlify.com//blog/jumpstart-by-thoughtworks/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/jumpstart-by-thoughtworks/</guid><pubDate>Sun, 19 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;!-- 21 May - 8 August 2019 --&gt;
+&lt;p&gt;Yes, I know with the rise of IT in Singapore many coding bootcamps are popping up. This is a long overdued post but I hope it adds to the conversation.&lt;/p&gt;
+&lt;p&gt;I would recommend programs by &lt;a href=&quot;https://www.imda.gov.sg/imtalent/programmes/tipp#EligiblePartnersandCourses&quot;&gt;Tech Immersion and Placement Programme&lt;/a&gt; (TIPP) partners solely because it’s subsidied for Singaporeans.&lt;/p&gt;
+&lt;p&gt;You might be wondering out of all the coding bootcamps like General Assembly and Trent College - why &lt;a href=&quot;https://www.thoughtworks.com/jumpstart&quot;&gt;JumpStart&lt;/a&gt;? Well, for Singaporeans it’s the cheapest at only 1k for three months compared to GA’s 5-6k! For Permanent Residents (PR), I vaguely recall a bootcamp mate mentioned that he paid 6-7k. Not sure.&lt;/p&gt;
+&lt;p&gt;The instructors at JumpStart tend to have more experience too. I was from batch 5 and my instructors had a few years of working experience. That’s not taking into account of their well-known rigorous interview questions. GA, on the other hand, has a practice of recruiting their own graduates to come work as Teaching Assistants (TA). It’s doubtful how experienced the TAs are and how much assistance they can offer.&lt;/p&gt;
+&lt;p&gt;If you need any other reasons, it’s because they teach Software Engineering best practices like Test Driven Development (TDD), pair programming, Agile methodology and trunk-based development. Moreover, they explained what mocking is, how to do it and you get to practise it during projects. As far as I know, GA doesn’t teach that.&lt;/p&gt;
+&lt;p&gt;TDD means writing the test before the code. ThoughtWorks teaches that and front end testing too. Rarely do companies practise testing which means knowing how to write tests is a valuable skill that employers will look at. That alone sets JumpStart apart from other bootcamps in my opinion.&lt;/p&gt;
+&lt;p&gt;ThoughtWorks is also a huge believer in pair programming. Imagine how stressful it is to have a real-life compiler beside you to scrutinise your code. You can’t get that sort of accountability by coding alone. Pairing forces you to explain your streams of consciousness and tests your understanding because first you have to know before you can teach. IMO this is the fastest way for a Junior engineer to level up by gaining access to a senior’s treasure trove of experience. You learn about the different problem solving approaches, the tradeoffs, library and language syntax, keyboard shortcuts. The senior gets to consolidate his/her knowledge and perhaps write a book…&lt;/p&gt;
+&lt;p&gt;We practised Agile methodology whereby we spoke with the client and noted their feature requests. We translated them to user stories and wrote it down on index cards. As a team, we estimated the story points and our velocity (how many points we can finish in a week). We prioritised the features based on logical workflow and based on which features will deliver maximum value to the client.&lt;/p&gt;
+&lt;p&gt;In conclusion, both ThoughtWorks and GA attract different kinds of people. Despite what I said, JumpStart has some prerequisites: applicants are required to do 5-6 Data Structure and Algorithm questions and are assessed on it before they are accepted. GA does not have similar requirements as far as I know. You can think of it like GA takes you from 0% - 60%, while JumpStart takes you from 20% - 80%.&lt;/p&gt;
+&lt;!-- what is trunk-based development? everything on master branch something something --&gt;</content:encoded></item><item><title><![CDATA[Apartments Residential Management System (ARMS)]]></title><description><![CDATA[Arms is the frontend, while Legs is the backend and the server. ARMS LEGS Arms github Legs github Problem ARMS help ThoughtWorks Singapore…]]></description><link>https://jenlky.netlify.com//projects/arms/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/arms/</guid><pubDate>Fri, 02 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;!-- ![ShopLah front page](../assets/shoplah.webp &quot;ShopLah front page&quot;) --&gt;
+&lt;p&gt;Arms is the frontend, while Legs is the backend and the server.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://demo-armadillo-arms.herokuapp.com/&quot;&gt;ARMS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://demo-armadillo-legs.herokuapp.com/&quot;&gt;LEGS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/armadillo-apps/arms2&quot;&gt;Arms github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/armadillo-apps/legs&quot;&gt;Legs github&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;p&gt;ARMS help ThoughtWorks Singapore manage housing leases to foreign employees who travel to Singapore for projects.&lt;/p&gt;
+&lt;p&gt;Client was using spreadsheet until we built a centralised system to allocate occupants to apartments and vice versa. Client can now easily generate reports and track expenses.&lt;/p&gt;
+&lt;h3&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Our group project was for 3 weeks. Since we had limited time, we had to ascertain the necessary features our Minimum Viable Product (MVP) should deliver to provide maximum utility to the user. Afterwards, we slotted them into each sprint based on our velocity.&lt;/p&gt;
+&lt;p&gt;Our MVP is a centralised system which allows the user to create apartments and occupants, and allocate occupants to apartments and vice versa.&lt;/p&gt;
+&lt;h4&gt;Stack&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Frontend:&lt;/em&gt; React, Proptypes&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Backend:&lt;/em&gt; Express, Mongoose&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Testing:&lt;/em&gt; Jest, Jest-MongoDB, React Testing Library, Cypress for automated end-to-end testing&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;DevOps:&lt;/em&gt; CircleCi, Heroku, Netlify&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Misc:&lt;/em&gt; Axios, CORS, Moment, Faker for faking test data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Accomplishments&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Practised Test Driven Development (TDD) and followed Agile practices&lt;/li&gt;
+&lt;li&gt;Brainstormed user stories, decided on MVP, estimated complexity of each card and our velocity, slotted the user stories into our sprints&lt;/li&gt;
+&lt;li&gt;Pair programmed every day and swapped pairs frequently; rotated and took turns to be BA/QA&lt;/li&gt;
+&lt;li&gt;Trunk based development: everyone worked on master branch instead of creating new feature branches&lt;/li&gt;
+&lt;li&gt;Both frontend and backend deployed to Heroku&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Nested Todo List]]></title><description><![CDATA[Todo List Github Problem I wanted an overview of what I studied and be able to drill down to the specific subtopic. Solution Nested list…]]></description><link>https://jenlky.netlify.com//projects/nested-todo-list/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/nested-todo-list/</guid><pubDate>Mon, 08 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;!-- ![ShopLah front page](../assets/shoplah.webp &quot;ShopLah front page&quot;) --&gt;
+&lt;p&gt;&lt;a href=&quot;https://jumpstart-todo-list.netlify.com/&quot;&gt;Todo List&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/react-app-todo-list&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;p&gt;I wanted an overview of what I studied and be able to drill down to the specific subtopic.&lt;/p&gt;
+&lt;h3&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Nested list items that can be toggled to show its children. Useful for studying and promote active learning.
+Users can sign up, login, create multiple lists and only see their own list.&lt;/p&gt;
+&lt;h4&gt;Stack&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Frontend:&lt;/em&gt; React, Material-UI, SASS&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Backend:&lt;/em&gt; Express, Mongoose, Bcrypt, JSON web token, Joi for data validation&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Testing:&lt;/em&gt; Jest, Jest-MongoDB, React Testing Library, Cypress for automated end-to-end testing&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Misc:&lt;/em&gt; Axios, Dotenv&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Accomplishments&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Consume guarded REST API&lt;/li&gt;
+&lt;li&gt;Frontend deployed to Netlify, and backend deployed to Heroku&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[JumpStart Frontend Project]]></title><description><![CDATA[Todo List  was a front-end project I created during Week 4 of JumpStart. The whole week was dedicated for us to build something using what…]]></description><link>https://jenlky.netlify.com//blog/jumpstart-frontend-project/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/jumpstart-frontend-project/</guid><pubDate>Mon, 17 Jun 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://jumpstart-todo-list.netlify.com/&quot;&gt;Todo List&lt;/a&gt; was a front-end project I created during Week 4 of JumpStart. The whole week was dedicated for us to build something using what we learnt so far - the only criteria is it must be in React. We presented it on the following Monday morning.&lt;/p&gt;
+&lt;h3&gt;Use Case:&lt;/h3&gt;
+&lt;p&gt;My notes from the classes were becoming overwhelming. I was using Google Sheets to take notes because I needed a quick and dirty way to store as much information as possible. It allowed me to use the cells as question and answer, kinda like flashcards. &lt;em&gt;But it didn’t allow me a quick overview of each topic.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;My primary motivation for building a Todo List was to solve this. To fulfill my requirements it must have:&lt;/p&gt;
+&lt;h4&gt;Features (must be able to):&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Create nested list where each child item is also able to have its own children&lt;/li&gt;
+&lt;li&gt;Add, edit and remove each list item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- **Good to have:**
+1. Drag and drop to allow user to reorder it --&gt;
+&lt;h4&gt;Repos involved:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;react-dnd-chessboard&lt;/li&gt;
+&lt;li&gt;react-app-todo-list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Problems faced:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;How should I design my items state? What should I use? An array of objects or object of objects to represent my nested items?&lt;/li&gt;
+&lt;li&gt;What about the id of each item object? It has to be unique because I will be using it as React keys too.&lt;/li&gt;
+&lt;li&gt;Using spread and rest operator to pass props down from parents to children&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;1 -&lt;/strong&gt; I settled with an array of objects because at first I wanted to build a nested todo list whose items are capable of being reordered by drag and drop. However, due to lack of time I had to put it on hold in the interest of getting the bare minimum out first.&lt;/p&gt;
+&lt;p&gt;One way to reorder items is to change its index, or I could loop through and sort the object based on its keys. Changing the index seemed less expensive so I chose that.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2 -&lt;/strong&gt; I thought of using &lt;code class=&quot;language-text&quot;&gt;id: 1&lt;/code&gt; for the parent item, &lt;code class=&quot;language-text&quot;&gt;id: 1-1&lt;/code&gt; for its child and &lt;code class=&quot;language-text&quot;&gt;id: 1-1-2&lt;/code&gt; for its grandchild. The idea is to keep concatenating &lt;code class=&quot;language-text&quot;&gt;-number&lt;/code&gt; to represent its children. But what if I implemented drag and drop? In that case, what’s the point of using &lt;code class=&quot;language-text&quot;&gt;-number&lt;/code&gt; to denote its child relationship, when the user is allowed to drag a child item to its parent level? Thereby negating any benefits from using &lt;code class=&quot;language-text&quot;&gt;-number&lt;/code&gt; to represent the child relationship.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3 -&lt;/strong&gt; I tried to use spread and rest operators to pass down props, but somehow there was an error.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4 -&lt;/strong&gt; I didn’t understand what was written for react-dnd-chessboard&lt;/p&gt;
+&lt;h4&gt;Lessons learnt:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Deep cloning is only for… I don’t need to do deep cloning. React keep tracks of object’s outer references, it doesn’t care about its inner references. Shallow cloning works for my case because it creates an array of objects with different outer reference and the same inner references. Any mutation happens in the shallow cloned object that has a different reference (or memory address), and not the state itself.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus, this is in compliant with React’s principle of not mutating state directly. After that, all you need to do is trigger a re-rendering with &lt;code class=&quot;language-text&quot;&gt;this.setState({ items: ...this.state.items })&lt;/code&gt;.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Jesstern’s feedback - “What if you move the cross from the component ToDoItemRight to ToDoItemLeft then would it still be called ToDoItemRight?” In short, I should name my component based on what it does rather than its positioning…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Function cannot be spreaded, only objects and arrays can be spreaded.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax&quot;&gt;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Rooting Redmi Note 5 and Note 7 Pro]]></title><description><![CDATA[For those Redmi smartphone users, you might have searched queries like “Redmi Note 5 how to root with anti rollback check” before. Look no…]]></description><link>https://jenlky.netlify.com//blog/rooting-redmi-note-5-and-note-7-pro/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/rooting-redmi-note-5-and-note-7-pro/</guid><pubDate>Thu, 11 Apr 2019 07:51:00 GMT</pubDate><content:encoded>&lt;p&gt;For those Redmi smartphone users, you might have searched queries like “Redmi Note 5 how to root with anti rollback check” before. Look no further, here’s a simplified tutorial of it. &lt;/p&gt;
+&lt;p&gt;Or proceed &lt;a href=&quot;https://miui.blog/redmi-note-5/root-bypass-arb/&quot;&gt;here&lt;/a&gt;, if you prefer a longer and more detailed tutorial. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use Case: I dropped and cracked my Redmi Note 5 screen and bought Redmi Note 7 Pro to replace it.&lt;/strong&gt;   &lt;/p&gt;
+&lt;p&gt;Therefore I wanted to use Titanium to back up and restore my files because it was the most comprehensive (or exhaustive?) backup app ever.
+However, it requires a rooted device - I proceed to root and back up all the desired files, contacts, messages etc. &lt;/p&gt;
+&lt;p&gt;When I tried to root Redmi Note 7 Pro, it told me to wait for 360 hours (or 15 days) before Xiaomi allows me to unlock bootloader. I’ve read that the waiting time varies from 72 hours to 720 hours. What &lt;a href=&quot;https://www.reddit.com/r/Xiaomi&quot;&gt;/r/Xiaomi&lt;/a&gt; said: &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The waiting time on models manufactured before 2018 is 72 hours. On models manufactured in July 2018 or later, it is 720 hours. Currently there’s no known way to bypass the waiting time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Eventually I decided on using Mi Mover to transfer files over Wifi. Some apps weren’t transferred over, and the contacts and messages required multiple transfers… but it was quite reliable. &lt;/p&gt;
+&lt;h3&gt;Prerequisites to unlock bootloader&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http://en.miui.com/thread-237673-1-1.html&quot;&gt;Disable driver signature enforcement in Windows&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://forum.xda-developers.com/showthread.php?t=2588979&quot;&gt;Install ADB and Fastboot tools with drivers on Windows&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enable OEM unlocking and USB debugging in your device&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;  a) Enable Developer Options in: &lt;em&gt;Settings/About Phone/MIUI version&lt;/em&gt;. Click on it seven times.&lt;/p&gt;
+&lt;p&gt;  b) Now go to: &lt;em&gt;Settings/Additional settings/Developer Options&lt;/em&gt; and check &lt;em&gt;OEM unlocking&lt;/em&gt; and &lt;em&gt;USB debugging&lt;/em&gt;.&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Check if the bootloader is locked at &lt;em&gt;Settings/Additional settings/Developer Options/Mi Unlock status&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Requisites&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Unlock bootloader&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ensure the recovery ROM is in the same folder as Adb folder. shift + rightclick open command window here. Enter the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;fastboot getvar anti&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If your ARB index is 4 or greater, enter &lt;code class=&quot;language-text&quot;&gt;fastboot flash antirbpass dummy.img&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;The command order your computer to flash dummy.img file to your device through the Fastboot interface. &lt;/p&gt;
+&lt;p&gt;If your ARB index is 3, skip this step and to jump to the last bullet point.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;fastboot flash recovery twrp-3.2.3-2-whyred.img&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;fastboot boot twrp-3.2.3-2-whyred.img&lt;/code&gt; to boot into TWRP Recovery, if not you will boot into Redmi Note 5 custom recovery&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Flash Magisk.zip&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reboot to system&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[ShopLah]]></title><description><![CDATA[Shoplah Github Retrieves and displays products from Express API. Users must log in to add, remove products and change item quantity.
+When…]]></description><link>https://jenlky.netlify.com//projects/shoplah/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/shoplah/</guid><pubDate>Thu, 04 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8d4d7e6fa0dc304cfd7a974431836f53/34ef4/shoplah.webp&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.447916666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQAwCdASoUAAkAPtFUpEuoJKOhsAgBABoJZw24QAIGoGssgAD+88FjoE+DoRRRR98oVNvno88fPezKOe+cn8M5Gmy18sygO8XAuR37q+ArwG+fRd6C7/FaJMv+rvOAf5ClcAAA&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ShopLah front page&quot;
+        title=&quot;ShopLah front page&quot;
+        src=&quot;/static/8d4d7e6fa0dc304cfd7a974431836f53/1a2f4/shoplah.webp&quot;
+        srcset=&quot;/static/8d4d7e6fa0dc304cfd7a974431836f53/cc182/shoplah.webp 148w,
+/static/8d4d7e6fa0dc304cfd7a974431836f53/f7e40/shoplah.webp 295w,
+/static/8d4d7e6fa0dc304cfd7a974431836f53/1a2f4/shoplah.webp 590w,
+/static/8d4d7e6fa0dc304cfd7a974431836f53/4837b/shoplah.webp 885w,
+/static/8d4d7e6fa0dc304cfd7a974431836f53/2f819/shoplah.webp 1180w,
+/static/8d4d7e6fa0dc304cfd7a974431836f53/799b2/shoplah.webp 1770w,
+/static/8d4d7e6fa0dc304cfd7a974431836f53/34ef4/shoplah.webp 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://shoplah.herokuapp.com/&quot;&gt;Shoplah&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/shoplah&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Retrieves and displays products from Express API. Users must log in to add, remove products and change item quantity.
+When user logins, retrieve added products from database. Limits access to cart, profile and checkout page to logged in users.
+Displays and tallies the total quantity and price.&lt;/p&gt;
+&lt;h3&gt;Accomplishments&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Frontend:&lt;/em&gt; React, Redux and Material-UI&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Backend:&lt;/em&gt; Express and Mongoose&lt;/li&gt;
+&lt;li&gt;Created REST API endpoint&lt;/li&gt;
+&lt;li&gt;Tested /GET routes&lt;/li&gt;
+&lt;li&gt;User authentication with passport.js, passport-auth0 and express-session&lt;/li&gt;
+&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
+&lt;li&gt;Deployed to Heroku successfully&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Reasons for choosing ShopLah libraries]]></title><description><![CDATA[ShopLah was created because I wanted to build a simple ecommerce website and familiarise myself more with authentication process and full…]]></description><link>https://jenlky.netlify.com//blog/reasons-for-choosing-shoplah-libraries/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/reasons-for-choosing-shoplah-libraries/</guid><pubDate>Wed, 03 Apr 2019 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ShopLah was created because I wanted to build a simple ecommerce website and familiarise myself more with authentication process and full-stack app flow. &lt;/p&gt;
+&lt;p&gt;It was created with the following libraries:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Client:&lt;/strong&gt; React, React Router, Redux (redux-thunk, redux-logger, redux-persist), Material-UI&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Server:&lt;/strong&gt; Node.js, Express, ejs, Mongoose, dotenv, CORS&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authentication:&lt;/strong&gt; Passport.js, passport-auth0 and express-session&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Testing:&lt;/strong&gt; Mocha and Chai&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;React Router&lt;/h3&gt;
+&lt;p&gt;I used react-router because for &lt;code class=&quot;language-text&quot;&gt;ReactDOM.render(&amp;lt;App /&amp;gt;)&lt;/code&gt;, class component App needed a way to render between a bunch of routes such as ’/’, ‘/cart’, ‘/user/profile’. I didn’t know how to use server-side rendering for React.&lt;/p&gt;
+&lt;p&gt;React-router could provide that out of the box. Whereas link or anchor tag doesn’t work because I’m choosing to render a specific component/container if the route tallies. &lt;/p&gt;
+&lt;p&gt;Further explanation: &lt;a href=&quot;https://stackoverflow.com/questions/27928372/react-router-urls-dont-work-when-refreshing-or-writing-manually&quot;&gt;Server-side vs Client-side&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Redux&lt;/h3&gt;
+&lt;p&gt;I chose Redux because I have never used it before and I wanted to play around with it. I like the idea of getting back the same output for the same input very much - it’s like Mathematics. &lt;/p&gt;
+&lt;p&gt;However, the setup is a little verbose since you have to change/write code in a few places to make changes (like creating containers to mapStateToProps and mapDispatchToProps as compared to in React). The upside is whenever there’s a bug, it’s a lot easier to track it down. &lt;/p&gt;
+&lt;h4&gt;Redux Thunk&lt;/h4&gt;
+&lt;p&gt;In Redux, reducer must be pure - it can’t have any side effects - and action can only be an object. However, redux-thunk allows user to dispatch an action creator that returns a function instead of an action object. This function doesn’t need to be pure; it is allowed to have side effects, including executing asynchronous API calls. &lt;/p&gt;
+&lt;h4&gt;Redux Persist&lt;/h4&gt;
+&lt;p&gt;Redux-persist was used to persist data upon refresh. For example, the user is logged in and adds products to cart. The products should remain in Redux store when the user refreshes.&lt;/p&gt;
+&lt;h3&gt;dotenv&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It allows user to store passwords, API keys and sensitive information in a file called &lt;code class=&quot;language-text&quot;&gt;.env&lt;/code&gt;. The file is usually added to &lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt; along with &lt;code class=&quot;language-text&quot;&gt;node_modules&lt;/code&gt; to prevent it from being added to git.&lt;/p&gt;
+&lt;h3&gt;CORS&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.html5rocks.com/en/tutorials/cors/&quot;&gt;Introduction&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS&quot;&gt;CORS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy&quot;&gt;Same-origin policy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What is CORS?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CORS stands for Cross-Origin Resource Sharing. It is a mechanism that uses additional HTTP headers to tell a browser to let a web application running at one origin (domain) have permission to access selected resources from a server at different origin.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why is it needed?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For security reasons, browsers restrict cross-origin HTTP requests initiated from within scripts. For example, XMLHttpRequest and the Fetch API follow the same-origin policy. This means that a web application using those APIs can only request HTTP resources from the same origin the application was loaded from, unless the response from the other origin includes the right CORS headers.&lt;/p&gt;
+&lt;p&gt;The use-case for CORS is simple. Imagine the site alice.com has some data that the site bob.com wants to access. This type of request traditionally wouldn’t be allowed under the browser’s same origin policy. However, by supporting CORS requests, alice.com can add a few special response headers that allows bob.com to access the data.&lt;/p&gt;
+&lt;!--
+**Why did I have to use it for my webapp?**
+--&gt;
+&lt;h3&gt;Passport&lt;/h3&gt;
+&lt;h4&gt;passport-auth0&lt;/h4&gt;
+&lt;p&gt;I chose passport-auth0 strategy because I was learning about authentication and Mongoose and was looking for a no-frills authentication method. Therefore, I chose a third-party authentication provider like Auth0. &lt;/p&gt;
+&lt;h4&gt;express-session&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Auth0 Passport strategy enforces use of state parameter in OAuth 2.0 authorization requests and requires session support in Express to be enabled.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Session data is not saved in the cookie itself, just the session ID. Session data is stored server-side.&lt;/p&gt;
+&lt;p&gt;I needed express-session to store session ID, so that cookie session ID can be compared with server session ID. If it tallies, the user will be given access to that particular account.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Problems I faced when deploying ShopLah (Part 2)]]></title><description><![CDATA[In order to deploy to Heroku, I first had to download Heroku Command Line Interface (CLI).  Since I already had an  existing Heroku app , I…]]></description><link>https://jenlky.netlify.com//blog/problems-i-faced-when-developing-shoplah-part-2/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/problems-i-faced-when-developing-shoplah-part-2/</guid><pubDate>Wed, 03 Apr 2019 11:30:32 GMT</pubDate><content:encoded>&lt;!-- description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter. --&gt;
+&lt;ol&gt;
+&lt;li&gt;In order to deploy to Heroku, I first had to download Heroku Command Line Interface (CLI). &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Since I already had an &lt;a href=&quot;https://devcenter.heroku.com/articles/git#creating-a-heroku-remote&quot;&gt;existing Heroku app&lt;/a&gt;, I typed the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;heroku git:remote -a jenlky-shopping-cart
+// set git remote heroku to https://git.heroku.com/jenlky-shopping-cart.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next I typed &lt;code class=&quot;language-text&quot;&gt;git login&lt;/code&gt;, it opened a tab and asked me to login.
+After logging in, I typed &lt;code class=&quot;language-text&quot;&gt;git remote --v&lt;/code&gt; which returned the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;heroku  https://git.heroku.com/jenlky-shopping-cart.git (fetch)
+heroku  https://git.heroku.com/jenlky-shopping-cart.git (push)
+origin  https://github.com/helplah/shopping-cart.git (fetch)
+origin  https://github.com/helplah/shopping-cart.git (push)
+
+git push heroku master //push to heroku repo master branch
+git push origin master //push to github repo master branch&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So basically git add and git commit happen locally, while git remotes are versions of your repository that live on other servers. &lt;/p&gt;
+&lt;p&gt;You deploy your app by pushing its code to a special Heroku-hosted remote that’s associated with your app.&lt;/p&gt;
+&lt;p&gt;Lastly, I typed &lt;code class=&quot;language-text&quot;&gt;git push heroku master&lt;/code&gt; to push it to Heroku server.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Localhost is used in development stage. But in Heroku, you cannot use localhost to refer to yourself. I had to conditionally use &lt;code class=&quot;language-text&quot;&gt;windows.location.href&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;href links&lt;/code&gt; depending on whether I’m in development in production. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if (process.env.NODE_ENV === &amp;#39;development&amp;#39;) {
+window.location.href = &amp;#39;http://localhost:8080/auth/login&amp;#39;;
+} else {
+window.location.href = &amp;#39;https://jenlky-shopping-cart.herokuapp.com/auth/login&amp;#39;;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For example, &lt;code class=&quot;language-text&quot;&gt;/auth/login&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;https://jenlky-shopping-cart.herokuapp.com/cart&lt;/code&gt; were used like above.&lt;/p&gt;
+&lt;p&gt;My corsOption origin was also changed to &lt;code class=&quot;language-text&quot;&gt;https://jenlky-shopping-cart.herokuapp.com/&lt;/code&gt; too, instead of &lt;code class=&quot;language-text&quot;&gt;http://localhost:3000&lt;/code&gt;. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Problems I faced when developing ShopLah (Part 1)]]></title><description><![CDATA[ShopLah is a shopping cart site  hosted on heroku  which was built using React, React Router, Redux, Redux-persist and Mongoose (not an…]]></description><link>https://jenlky.netlify.com//blog/problems-i-faced-when-developing-shoplah-part-1/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/problems-i-faced-when-developing-shoplah-part-1/</guid><pubDate>Tue, 02 Apr 2019 20:30:00 GMT</pubDate><content:encoded>&lt;p&gt;ShopLah is a shopping cart site &lt;a href=&quot;https://jenlky-shopping-cart.herokuapp.com/&quot;&gt;hosted on heroku&lt;/a&gt; which was built using React, React Router, Redux, Redux-persist and Mongoose (not an exhaustive list). &lt;/p&gt;
+&lt;p&gt;To find out all the libraries that I used and the reasons behind my decision,
+check out this &lt;a href=&quot;/reasons-for-choosing-shoplah-libraries/&quot;&gt;post&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Cart controller logic&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Redux action creators flow chart:&lt;/p&gt;
+&lt;p&gt;AddToCart (product doesn’t exist or qty === 0) -&gt; cart controller -&gt; UpdateStore -&gt; CalculatePrice&lt;/p&gt;
+&lt;p&gt;RemoveFromCart (product exists or qty &gt;= 1) -&gt; cart controller -&gt; UpdateStore -&gt; CalculatePrice&lt;/p&gt;
+&lt;p&gt;UpdateCart (product already exists or qty &gt;= 1) -&gt; cart controller -&gt; UpdateStore -&gt; CalculatePrice&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;RemoveFromCart splice product from array, while UpdateCart changes the quantity of product.&lt;/p&gt;
+&lt;p&gt;My initial thought was that the cart logic should not be duplicated in both cart controller and productsReducer, since I am doing the same thing at two different places - one at database, and one at Redux store. What I did was use the returned response from cart controller to modify my Redux store. However, there is a noticeable ~1000ms delay every time I add, remove or update product’s quantity. &lt;/p&gt;
+&lt;p&gt;The reason was because http requests took time and the UX changes were not immediate. I re-wrote it so my action creators would dispatch actions first, before making http requests.&lt;/p&gt;
+&lt;h3&gt;React-router doesn’t work after connecting to Redux&lt;/h3&gt;
+&lt;p&gt;This is a known issue in react-redux, you can read more about it &lt;a href=&quot;https://github.com/reduxjs/react-redux/issues/507&quot;&gt;here&lt;/a&gt;
+or &lt;a href=&quot;https://github.com/reduxjs/react-redux/blob/master/docs/troubleshooting.md#my-views-arent-updating-when-something-changes-outside-of-redux&quot;&gt;here&lt;/a&gt;.
+&lt;em&gt;NavLink&lt;/em&gt; didn’t work because &lt;code class=&quot;language-text&quot;&gt;react-redux&lt;/code&gt; connect method implements &lt;em&gt;shouldComponentUpdate&lt;/em&gt; which will cause component not to render when props didn’t change. And this is conflicting with &lt;code class=&quot;language-text&quot;&gt;react-router 4&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;It seems they are going to &lt;a href=&quot;https://github.com/reactjs/react-redux/pull/625&quot;&gt;remove shouldComponentUpdate&lt;/a&gt; in &lt;code class=&quot;language-text&quot;&gt;react-redux version 5.1&lt;/code&gt;.
+There are at least 3 ways to get it working:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Currently, as a workaround, I pass a prop coming from &lt;code class=&quot;language-text&quot;&gt;Router&lt;/code&gt; like &lt;code class=&quot;language-text&quot;&gt;this.props.match.params&lt;/code&gt; to connected child component even though I don’t use it in inside. But it will make rerendering the component each time when routes change.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To avoid it you can pass &lt;em&gt;{pure: false} to connect&lt;/em&gt; as described in &lt;a href=&quot;https://github.com/reduxjs/react-redux/blob/master/docs/troubleshooting.md#my-views-arent-updating-when-something-changes-outside-of-redux&quot;&gt;react-redux troubleshooting section&lt;/a&gt;. I tried this but it’s too laggy.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Another way is to use withRouter Higher OrderHOC or pass location prop as described in &lt;a href=&quot;https://reacttraining.com/react-router/web/guides/dealing-with-update-blocking&quot;&gt;Dealing with Update Blocking&lt;/a&gt;. Eventually I opted for this method since it’s the simplest.
+However, that didn’t work too until I added &lt;code class=&quot;language-text&quot;&gt;&amp;lt;Router history={history}&amp;gt; to App.js before Switch&lt;/code&gt; and it works!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;React spinner&lt;/h3&gt;
+&lt;p&gt;React spinner only works when the user is not logged in, and he/she tries to access restricted routes like &lt;code class=&quot;language-text&quot;&gt;/cart&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;/user/profile&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;The loading page did not show the react spinner which was weird because &lt;code class=&quot;language-text&quot;&gt;if (this.state.loading) return null&lt;/code&gt; works. But I guess &lt;code class=&quot;language-text&quot;&gt;React&lt;/code&gt; updated the state too fast so it didn’t work. &lt;/p&gt;
+&lt;p&gt;Adding a setTimeout to &lt;code class=&quot;language-text&quot;&gt;this.setState({ loading: false })&lt;/code&gt; enabled React spinner to run on all routes!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// delay setState of loading so there&amp;#39;s time for spinner to run 
+constructor(props) {
+    super(props);
+    this.state = { loading: true };
+}
+
+componentDidMount() {
+    setTimeout(() =&amp;gt; {
+        this.setState({ loading: false })
+    }, 100); // the number of milliseconds affect when setState kicks in
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Redux-persist&lt;/h3&gt;
+&lt;p&gt;I used this library because my app loses all its store data on refresh. Redux store does not persist data upon refresh. &lt;/p&gt;
+&lt;p&gt;For example, if an user logs in successfully and navigates to another page - he’d lose all his shopping cart items and all his login details from &lt;code class=&quot;language-text&quot;&gt;Redux store&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;What &lt;code class=&quot;language-text&quot;&gt;redux-persist&lt;/code&gt; does is it prevents the user from losing all these data when he refreshes the page. It saves &lt;code class=&quot;language-text&quot;&gt;Redux store&lt;/code&gt; data to localStorage, and rehydrates &lt;code class=&quot;language-text&quot;&gt;Redux store&lt;/code&gt; when the user refreshes. &lt;/p&gt;
+&lt;p&gt;For example, there was &lt;a href=&quot;https://stackoverflow.com/questions/55412223/react-redux-typeerror-invalid-attempt-to-spread-non-iterable-instance&quot;&gt;a bug&lt;/a&gt; where I erroneously returned &lt;code class=&quot;language-text&quot;&gt;productsReducer: {showPopup: true}&lt;/code&gt; without the other values. My persist/REHYDRATE kept rehydrating my productsReducer with that one key.&lt;/p&gt;
+&lt;p&gt;Thus when productsReducer ran &lt;code class=&quot;language-text&quot;&gt;let updatedId = [...state.id]&lt;/code&gt; there was an error, because there was no id key in the object.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const initialState = {
+  products: [],
+  id: [],
+  qty: [],
+  numOfItems: 0,
+  totalPrice: 0,
+  status: &amp;#39;&amp;#39;,
+  showPopup: false
+};
+
+const productsReducer = (state = initialState, action) =&amp;gt; {
+  let updatedId = [...state.id]; // there was an error on this line
+  let updatedQty = [...state.qty];
+    ....
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But the problem is when the user isn’t logged in, the products he added to cart shouldn’t persist. He should not be able to see the added shopping cart items.&lt;/p&gt;
+&lt;p&gt;To solve this I tried to &lt;code class=&quot;language-text&quot;&gt;blacklist: [&amp;#39;productsReducer&amp;#39;]&lt;/code&gt;, however the problem is blacklist can’t tell when the user isLoggedIn or not. I want to conditionally persist some information, so my options were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;pause before persist and rehydrate action. But I couldn’t get &lt;code class=&quot;language-text&quot;&gt;pauseStore: () =&amp;gt; dispatch({ type: PAUSE })&lt;/code&gt; to work…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;remove all products from productsReducer if user is not logged in.
+Although this means that an extra action has to be dispatched for non-logged in users, I chose this method because it was the most straightforward one that worked.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;create a permanent and a temporary reducer - blacklist the temporary one. Too complicated.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;I used Auslogics Disk Defrag defrag and optimise&lt;/h3&gt;
+&lt;p&gt;On hindsight, I shouldn’t do that because it messed with my environment variables path and node_modules. I knew my node_modules were faulty because it showed the error -
+&lt;strong&gt;‘nodemon’ is not recognized as an internal or external command, operable program or batch file.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To fix the former, type the following:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm config get prefix
+C:\Users\Jen\AppData\Roaming\npm // that&amp;#39;s the path on my pc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Go to My Computer (for Windows 7) or This PC (for Windows 10), right click -&gt; properties -&gt; advanced system settings. &lt;/p&gt;
+&lt;p&gt;Under Advanced tab, click on Environment Variables and under user variables for &lt;em&gt;user&lt;/em&gt; - click edit path variable and check if the path above is inside. If it is not, add it in and restart your computer.&lt;/p&gt;
+&lt;p&gt;To fix the latter, I had to remove and re-install all the packages…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[Hi I’m Jenssen! I’ve created this blog dedicated for programming and technical problems I’ve faced.
+This is my first post and serves as an…]]></description><link>https://jenlky.netlify.com//blog/hello-world/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/hello-world/</guid><pubDate>Mon, 01 Apr 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Hi I’m Jenssen! I’ve created this blog dedicated for programming and technical problems I’ve faced.
+This is my first post and serves as an introduction on what I want to do!&lt;/p&gt;
+&lt;p&gt;I have another blog on wordpress for non-technical matters, I was wondering if I should combine them together. Time will tell!&lt;/p&gt;
+&lt;p&gt;That’s it for now. I’ll write about the problems I faced with development and deployment of ShopLah in the next post!&lt;/p&gt;
+&lt;p&gt;Note to self: this &lt;a href=&quot;https://www.markdownguide.org/basic-syntax&quot;&gt;Markdown Guide&lt;/a&gt; will come in handy!&lt;/p&gt;
+&lt;!--
+https://www.markdownguide.org/basic-syntax
+
+# h1
+## h2
+
+== h1 (increment of ==/-- characters)
+-- h2
+
+**Bold**
+__Bold__
+
+*Italic*
+_Italic_
+
+***Bold and Italic***
+___Bold and Italic___
+__*Bold and Italic*__
+**_Bold and Italic_**
+
+Blockquotes:
+&gt; A salted duck egg is a Chinese preserved food product made by soaking duck
+&gt; eggs in brine, or packing each egg in damp, salted charcoal. In Asian
+
+Code:
+`Redux`
+
+```
+Code block
+```
+
+To create code blocks, indent every line of the block by at least four spaces or one tab.
+    &lt;html&gt;
+      &lt;head&gt;
+      &lt;/head&gt;
+    &lt;/html&gt;
+
+Links:
+[salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg)
+
+Images:
+![Chinese Salty Egg](./salty_egg.jpg)
+
+Ordered lists:
+1. Fat
+2. Sugar
+
+Unordered list:
+- Sulfur
+* Ammonia
+  + Bomb
+--&gt;</content:encoded></item><item><title><![CDATA[Flashcard App]]></title><description><![CDATA[Flashcard Github Created during Chingu Voyage, a collaborative environment where hundreds of people build projects together to learn.
+It…]]></description><link>https://jenlky.netlify.com//projects/flashcard-app/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/flashcard-app/</guid><pubDate>Mon, 23 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d1786e43b77c7c527a97d4176ab89159/95bc2/flashcard-app-1400.webp&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.85714285714286%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAwCdASoUAAoAPtFUpEuoJKOhsAgBABoJQBOmUABp2qh2b7rpFj7sAP4nGMxaFPu7oN9UIuFEM/VxS4FKJUrCJbB9yu8YoMAAAA==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Flashcard App&quot;
+        title=&quot;Flashcard App&quot;
+        src=&quot;/static/d1786e43b77c7c527a97d4176ab89159/1a2f4/flashcard-app-1400.webp&quot;
+        srcset=&quot;/static/d1786e43b77c7c527a97d4176ab89159/cc182/flashcard-app-1400.webp 148w,
+/static/d1786e43b77c7c527a97d4176ab89159/f7e40/flashcard-app-1400.webp 295w,
+/static/d1786e43b77c7c527a97d4176ab89159/1a2f4/flashcard-app-1400.webp 590w,
+/static/d1786e43b77c7c527a97d4176ab89159/4837b/flashcard-app-1400.webp 885w,
+/static/d1786e43b77c7c527a97d4176ab89159/2f819/flashcard-app-1400.webp 1180w,
+/static/d1786e43b77c7c527a97d4176ab89159/95bc2/flashcard-app-1400.webp 1400w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://shrouded-taiga-52624.herokuapp.com/&quot;&gt;Flashcard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/chingu-voyage4/Bears-Team-9&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Created during Chingu Voyage, a collaborative environment where hundreds of people build projects together to learn.
+It allows users to create a topic, insert questions and answers.
+Users can only add card or delete from the topic they created,
+but they can study all the existing topics (even if they didn’t create it).&lt;/p&gt;
+&lt;h3&gt;Accomplishments&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Frontend:&lt;/em&gt; React and Redux&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Backend:&lt;/em&gt; Express&lt;/li&gt;
+&lt;li&gt;Practised Git and did my first PR&lt;/li&gt;
+&lt;li&gt;Made it responsive using media queries and refactoring CSS&lt;/li&gt;
+&lt;li&gt;Used table and grid for layout&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[React Wikipedia]]></title><description><![CDATA[React Wikipedia Github Searches the typed word at Wikipedia and returns the top 10 results.
+When you click on any of the results, it directs…]]></description><link>https://jenlky.netlify.com//projects/react-wikipedia/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/react-wikipedia/</guid><pubDate>Sun, 22 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/303d70e2b133d2e6e0314e25aed709d3/a987b/react-wikipedia.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.86458333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABsklEQVQoz2WP3U4aYRCGvZ+mB1C1yv7z7T+g9qwlHlhCMeqRBlguoTGeG3uqEXoF3kijFFx2F3aRUrPCsizB6H4OaFQ0eTOZTOaZ9505jM1ZWRg3w9C+8fTO/6rbr4Xh4/C1npbnnjtYGt9eDoOa55/3Bw3Pt4eBM/Cbnle9v288KwyNN7AxHrd6vZbrmvsHP9Pr69lcdnM7t72zuTXRVjb3YyPzPZPNfP2WPjs7xbgDVybwNJU5HFq2rbfb+u5efmmZQ3yCpIVlAsWmWopxoBiJPnxcPD45xLh7d9d4iT0aNdvtxtWVni8UaUaQ1VUkqCTNkxQPlaIFihHYuByJEqfloxf4yTmwHEe/vraKWolmxUTyiyinWE4CgEMyVBDDSZFPRLly9MbZGI1ahlG1nZqmlcBKkJK8oApSApqJxEmNIyU6T87Aj85B0LSsv45dLxS1GAE/qyySmbjEsCJFT5MzPIek+UWqXPmF8b8Z2PfNbtdy3VaxVIL3lMQqvA1VklNxXoFbHFIgyMJnuvL7HTwYGPX6H9O6yBc0MFGTa6KUgqgAy0oKDsnqCgwJElVeOT8AsHiCSaJBbfoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;React Wikipedia&quot;
+        title=&quot;React Wikipedia&quot;
+        src=&quot;/static/303d70e2b133d2e6e0314e25aed709d3/b9e4f/react-wikipedia.png&quot;
+        srcset=&quot;/static/303d70e2b133d2e6e0314e25aed709d3/cf440/react-wikipedia.png 148w,
+/static/303d70e2b133d2e6e0314e25aed709d3/d2d38/react-wikipedia.png 295w,
+/static/303d70e2b133d2e6e0314e25aed709d3/b9e4f/react-wikipedia.png 590w,
+/static/303d70e2b133d2e6e0314e25aed709d3/f9b6a/react-wikipedia.png 885w,
+/static/303d70e2b133d2e6e0314e25aed709d3/2d849/react-wikipedia.png 1180w,
+/static/303d70e2b133d2e6e0314e25aed709d3/bbefa/react-wikipedia.png 1770w,
+/static/303d70e2b133d2e6e0314e25aed709d3/a987b/react-wikipedia.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://jenlky.github.io/react-wikipedia/&quot;&gt;React Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/react-wikipedia&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Searches the typed word at Wikipedia and returns the top 10 results.
+When you click on any of the results, it directs you to the said result.&lt;/p&gt;
+&lt;h3&gt;Accomplishments&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create React App boilerplate&lt;/li&gt;
+&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
+&lt;li&gt;Wikipedia OpenSearch&lt;/li&gt;
+&lt;li&gt;Used CSS grid for layout&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[React Quote Machine]]></title><description><![CDATA[React Quote Machine Github Generates a new design quote when it’s clicked. Allows user to tweet said quote. Accomplishments Create React App…]]></description><link>https://jenlky.netlify.com//projects/react-quote-machine/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/react-quote-machine/</guid><pubDate>Wed, 11 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e5851170651fd5ea02a52c71ae933d90/a987b/react-quote-machine.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.86458333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABE0lEQVQoz2P4PMUFjj5NhqLPU1w/Q0nXL1NckcRREAMy5/csx/9zHT5Pt389GYRegcmXk+y/zXD4P8fh1yzHT3g0nywN3JERvjMzbFtm2PbMsB3Z4Tuzw3dkhe/OjdiVHXmqzP/rNKdPaJo/Qd3sVGpeEqoxNU5/YpRWf7T2hBCl7iD5zkC5zmCFTmehnlKznJ+z7D5NdsWi+fNkpxLrUn+VSeGK7X4SLf6SLX7iTb5izT6iTcFyrcHKE2psc3/MwK7Z9ctkxxqPogD1lljFshiVyhhlBIpXqwxXrm9zSfsx0x5dMxRNdXnW5fywzeVhhysmut/q8qzb5ctU3AH2bZrL9+k4EVAWX1TB4xMXwqeZVAQAsyNIWjyjclYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;React Quote Machine&quot;
+        title=&quot;React Quote Machine&quot;
+        src=&quot;/static/e5851170651fd5ea02a52c71ae933d90/b9e4f/react-quote-machine.png&quot;
+        srcset=&quot;/static/e5851170651fd5ea02a52c71ae933d90/cf440/react-quote-machine.png 148w,
+/static/e5851170651fd5ea02a52c71ae933d90/d2d38/react-quote-machine.png 295w,
+/static/e5851170651fd5ea02a52c71ae933d90/b9e4f/react-quote-machine.png 590w,
+/static/e5851170651fd5ea02a52c71ae933d90/f9b6a/react-quote-machine.png 885w,
+/static/e5851170651fd5ea02a52c71ae933d90/2d849/react-quote-machine.png 1180w,
+/static/e5851170651fd5ea02a52c71ae933d90/bbefa/react-quote-machine.png 1770w,
+/static/e5851170651fd5ea02a52c71ae933d90/a987b/react-quote-machine.png 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://jenlky.github.io/react-quote-machine/&quot;&gt;React Quote Machine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/react-quote-machine&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Generates a new design quote when it’s clicked. Allows user to tweet said quote.&lt;/p&gt;
+&lt;h3&gt;Accomplishments&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create React App boilerplate&lt;/li&gt;
+&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
+&lt;li&gt;Consumed Quotes on Design API&lt;/li&gt;
+&lt;li&gt;Used ES6 JavaScript and fetch&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Tribute Page]]></title><description><![CDATA[Tribute Page Github Built as a tribute to Elon Musk with a timeline of his life.
+I chose Elon Musk because I admire and respect his tenacity…]]></description><link>https://jenlky.netlify.com//projects/tribute-page/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/tribute-page/</guid><pubDate>Mon, 26 Mar 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d61e527a17c3867df981aded4f1082b8/fa9fe/tribute-page-557.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 557px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.93536804308797%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAABcRAAAXEQHKJvM/AAACEklEQVQoz01R30/TUBTuH2BifDTxwT/GNxMTn3hQJ4oxajAYETQKgxAkLFEyDXFMTMxkgaBgAogadYsMN8bKwm5at3W2Y5N2d5lrqevW2x/b6u0a0S+559yce74v556PCG1ufgiFuELBsqx2u239RbPZNAyj1WodVpzX79nsx3AYs75EIsS7WOztxgbNcZqmVapVUZYbjQZu0nUdV0zT/EfuxFQuh/sxay0aJV7HYsskObe6cv6iq7+7q6frTN/QAxUhRVEw2ZFwVIyOEMmy89Ho0vb2m60tIpBIBAHwLS32X3dlVgLf/BP3hoek34oglCAsl0qwZANKkiSKEqrXYxw3G4+/IskASRIzOzt+AJ69X5/2uBNT7vijYe/jybIoCbyAObwdcYZY6uc+j1OY5Z6SpD+ZnEkmCW8q5aXp55GvV65dmrpwNjg+OP5iVjqQK5WKaEP6VcWbEPHBF+VA/ry359ndfQKAFwDiIQCeH+xYcO7Y0SOu06fGbl297/PVFAVC2JnZHtv+QrmMh6jL8nqxOALAJEVNUBThpunRfH5kYf7kiePdrnMvfdM37tzGizUbptEwnIhqKqppak2zmu1Vnh+kqNF02p1OE3cZpjebXSsWhDy3XxKQbpQh/N/wQ6NandqyIPRmMpg1wDBEH8teZphPomgZhm7awPYghFSkYiAbqgPHqkUIe3I5zLrJsn8Aki7sVsxloX0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Tribute Page&quot;
+        title=&quot;Tribute Page&quot;
+        src=&quot;/static/d61e527a17c3867df981aded4f1082b8/fa9fe/tribute-page-557.png&quot;
+        srcset=&quot;/static/d61e527a17c3867df981aded4f1082b8/cf440/tribute-page-557.png 148w,
+/static/d61e527a17c3867df981aded4f1082b8/d2d38/tribute-page-557.png 295w,
+/static/d61e527a17c3867df981aded4f1082b8/fa9fe/tribute-page-557.png 557w&quot;
+        sizes=&quot;(max-width: 557px) 100vw, 557px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://jenlky.github.io/tribute-page/&quot;&gt;Tribute Page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/tribute-page&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Built as a tribute to Elon Musk with a timeline of his life.
+I chose Elon Musk because I admire and respect his tenacity, work ethics and drive towards serial entrepreneurship.
+Most importantly, I’m impressed and inspired by his motivation for doing all these things -
+he truly believes in building a better world.&lt;/p&gt;
+&lt;h3&gt;Accomplishments&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
+&lt;li&gt;Responsive image&lt;/li&gt;
+&lt;li&gt;Refactored CSS to SCSS&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Twitch TV]]></title><description><![CDATA[Twitch TV Github Tracks twitch streamers and shows what they’re streaming if they’re online. Allows user to filter based on status…]]></description><link>https://jenlky.netlify.com//projects/twitch-tv/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/twitch-tv/</guid><pubDate>Sun, 25 Mar 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6a587fd98094e14db42a3ab4aacd7bad/65025/twitch-tv-573.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 573px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 47.81849912739965%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAABcRAAAXEQHKJvM/AAABU0lEQVQoz3XQXUvCUBjAcT9bXaURdBHdlEne1CDLCqa5mbglitU2XQh9g0ykb5CsApnNlzJmUKBCU3fmps6clx1dF5ETfnBunv95sym9FgRUSTdUoZgn8dA1m0pe0KkEm2LYcAAP+QNB1M9SiXrzQ9M7QJPMBLKZi6x+wbhQfEJRL30Vi1MklYxeMhE8dBwIHp5g3lMCrX2+9IbAIgY9SR3IjfZ7Tri7r6Y5McOJt7nqDfeWgR5rWU5M1zui2pfh5MzJmqSPlMJrGfETRxHmgKD3TWHKhODx52plMAKW15aGhpIvVbb3osuuM4eTWNqYsG+SU8TCWpDjheFYgZMW8fdYeSgUV92xFTfpcBF254RjizQtrk9jY06sG12+JOx4MA+WRHz0LjqB+Jgp2u095ytlfQTk2Wv/fpsmtUCzDRqW/r7WIoa6/fY8/yYtYrj9PLPxDy7y1ivNRgTAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Twitch TV&quot;
+        title=&quot;Twitch TV&quot;
+        src=&quot;/static/6a587fd98094e14db42a3ab4aacd7bad/65025/twitch-tv-573.png&quot;
+        srcset=&quot;/static/6a587fd98094e14db42a3ab4aacd7bad/cf440/twitch-tv-573.png 148w,
+/static/6a587fd98094e14db42a3ab4aacd7bad/d2d38/twitch-tv-573.png 295w,
+/static/6a587fd98094e14db42a3ab4aacd7bad/65025/twitch-tv-573.png 573w&quot;
+        sizes=&quot;(max-width: 573px) 100vw, 573px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://jenlky.github.io/twitch-tv/&quot;&gt;Twitch TV&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/twitch-tv&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tracks twitch streamers and shows what they’re streaming if they’re online. Allows user to filter based on status.&lt;/p&gt;
+&lt;h3&gt;Accomplishments&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
+&lt;li&gt;Consumed Twitch API&lt;/li&gt;
+&lt;li&gt;jQuery for event handling&lt;/li&gt;
+&lt;li&gt;Bootstrap&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item></channel></rss>
