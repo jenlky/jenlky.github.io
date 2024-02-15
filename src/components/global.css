@@ -29,8 +29,12 @@ p {
   margin-bottom: 1rem;
 }
 
+.home-intro {
+
+}
+
 .home-name {
-  margin-top: 3rem;
+  margin-top: 0rem;
   margin-bottom: 0;
 }
 
@@ -89,7 +93,7 @@ p {
 
 .content {
   text-align: center;
-  width: 41rem;
+  width: 47rem;
   margin-left: auto;
   margin-right: auto;
 }
