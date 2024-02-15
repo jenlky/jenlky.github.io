@@ -34,40 +34,43 @@ class About extends React.Component {
         <h1>About</h1>
         <div className="about-intro">
           <div>
-            <p>Hi, my name is Jenssen Lee or my friends call me Jens! </p>
+            <p>Hi, my name is Jenssen Lee or my friends call me Jens!</p>
             <p>
-              I'm a Software Engineer who have 4 years of experience at a fintech SME in Singapore.
-              I started out by programming on my own and enrolling in ThoughtWorks Jumpstart, a 3
-              months coding bootcamp. From there I got my previous job at Wen Consulting.
+              I'm a Singapore-based Software Engineer who has 4 years of working experience. 
+              Here's a little bit about myself: I'm an avid runner and I've travelled overseas to run a marathon before.
+            </p>
+            <p>
+              My background is from a fintech SME and my expertise lies in JavaScript.
+              I started out learning to code on my own and enrolled in ThoughtWorks Jumpstart, a 3 months coding bootcamp. 
+              After that I got a job and the rest is history.
+            </p>
+            <p>
+              What motivated me was because software is eating the world and I wanted to be a part of it. 
+              My interest lies in problem-solving and writing clean code.
             </p>
           </div>
           <header>{header(data)}</header>
         </div>
         <p>
-          I code because software is eating the world and I want to partake in
-          it. I enjoy solving problems and working with individuals dedicated to
-          their craft.
-        </p>
-        <p>
           You can contact me at&nbsp;
           <span>
             <a href="mailto:jenssen.lee@gmail.com">jenssen.lee@gmail.com</a>
           </span>
-          , I&nbsp;
+          {/* , I&nbsp;
           <span>
             <a href="https://jenlky.wordpress.com/">write</a>
           </span>
-          &nbsp;for leisure too.
+          &nbsp;for leisure too. */}
         </p>
         <p className="social-media">
           <span>
-            Github: <a href="https://github.com/jenlky">@jenlky</a>
+            <a href="https://github.com/jenlky">Github</a>
           </span>
+          {/* <span>
+            <a href="https://twitter.com/Jenlky">Twitter</a>
+          </span> */}
           <span>
-            Twitter: <a href="https://twitter.com/Jenlky">@jenlky</a>
-          </span>
-          <span>
-            LinkedIn: <a href="https://www.linkedin.com/in/jenlky/">@jenlky</a>
+            <a href="https://www.linkedin.com/in/jenlky/">LinkedIn</a>
           </span>
         </p>
       </Layout>
