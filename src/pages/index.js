@@ -50,7 +50,7 @@ class Index extends React.Component {
               After that I got a job and the rest is history.
             </p>
             <p>
-              What motivated me was because software is eating the world and I wanted to be a part of it. 
+              My motivation to join the industry was because software is eating the world and I wanted to be a part of it. 
               My interest lies in problem-solving and writing clean code.
             </p>
           </div>
