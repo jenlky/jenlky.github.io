@@ -11,7 +11,6 @@ class Index extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-    console.log("data", data)
 
     let header = data => {
       return (
@@ -51,8 +50,8 @@ class Index extends React.Component {
               After that I got a job and the rest is history.
             </p>
             <p>
-              What got me interested was because software is eating the world and I wanted to be a part of it. 
-              I enjoy the process of problem-solving and writing clean code.
+              What motivated me was because software is eating the world and I wanted to be a part of it. 
+              My interest lies in problem-solving and writing clean code.
             </p>
           </div>
           <header>{header(data)}</header>
