@@ -4,6 +4,7 @@ import { rhythm } from "../utils/typography"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import NavLinks from "../components/navLinks"
 
 class Projects extends React.Component {
   render() {
@@ -17,7 +18,10 @@ class Projects extends React.Component {
           title="All posts"
           keywords={[`projects`, `portfolio`, `javascript`, `react`]}
         />
-        <h1>Projects</h1>
+        <div class='header-parent'>
+          <h1 class='header'>Projects</h1>        
+          <NavLinks />
+        </div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

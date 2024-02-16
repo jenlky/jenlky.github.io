@@ -8,6 +8,10 @@ html body {
   font-family: 'Open Sans', sans-serif !important;
 } */
 
+h1 {
+  margin-top: 0rem !important;
+}
+
 h1,
 h2,
 h3 {
@@ -29,7 +33,13 @@ p {
   margin-bottom: 1rem;
 }
 
-.home-header {
+.header-parent {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.header {
   width: -webkit-fill-available;
   width: -moz-available;
   display: flex;

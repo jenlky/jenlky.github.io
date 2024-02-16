@@ -34,7 +34,7 @@ class Index extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <div className="home-header">
+        <div className="header">
           <div className="home-intro">
             <h1 className="home-name">Jenssen Lee</h1>
             <p className="home-job-title">Software Engineer {" "} <sup className="available-for-hire">(Available for hire)</sup></p>

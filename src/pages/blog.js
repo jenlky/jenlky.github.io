@@ -4,6 +4,7 @@ import { rhythm } from "../utils/typography"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import NavLinks from "../components/navLinks"
 
 class Blog extends React.Component {
   render() {
@@ -14,7 +15,10 @@ class Blog extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" keywords={[`blog`, `javascript`, `react`]} />
-        <h1>Blog</h1>
+        <div class='header-parent'>
+          <h1 class='header'>Blog</h1>          
+          <NavLinks />
+        </div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
