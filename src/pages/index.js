@@ -42,7 +42,7 @@ class Index extends React.Component {
           <NavLinks />
         </div>
         <div className="home-about">
-          <div>
+          <div class='home-bio'>
             <p>Hi, my name is Jenssen Lee or my friends call me Jens!</p>
             <p>
               I'm a Singapore-based Software Engineer who has 4 years of working experience. 
@@ -58,7 +58,7 @@ class Index extends React.Component {
               My interest lies in problem-solving and writing clean code.
             </p>
           </div>
-          <header>{header(data)}</header>
+          <header class='home-pic'>{header(data)}</header>
         </div>
         <div class='home-contact'>
           <p>

@@ -35,7 +35,7 @@ p {
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 525px) {
     justify-content: space-between;
   }
 }
@@ -45,7 +45,7 @@ p {
   display: flex;
   flex-flow: column;
 
-  @media screen and (max-width: 475px) {
+  @media screen and (max-width: 525px) {
     width: auto;
   }
 }
@@ -63,6 +63,26 @@ p {
 .home-about {
   display: flex;
   flex-flow: row nowrap;
+
+  @media screen and (max-width: 525px) {
+    flex-flow: column nowrap;
+  }
+}
+
+.home-bio {
+  order: 1;
+
+  @media screen and (max-width: 525px) {
+    order: 2;
+  }
+}
+
+.home-pic {
+  order: 2;
+
+  @media screen and (max-width: 525px) {
+    order: 1;
+  }
 }
 
 .available-for-hire {
