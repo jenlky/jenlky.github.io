@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
+import NavLinks from "../components/navLinks"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -33,11 +34,14 @@ class Index extends React.Component {
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <div className="home-intro">
-          <h1 className="home-name">Jenssen Lee</h1>
-          <p className="home-job-title">Software Engineer {" "} <sup className="home-hire">(Available for hire)</sup></p>
+        <div className="home-header">
+          <div className="home-intro">
+            <h1 className="home-name">Jenssen Lee</h1>
+            <p className="home-job-title">Software Engineer {" "} <sup className="available-for-hire">(Available for hire)</sup></p>
+          </div>
+          <NavLinks />
         </div>
-        <div className="about-intro">
+        <div className="home-about">
           <div>
             <p>Hi, my name is Jenssen Lee or my friends call me Jens!</p>
             <p>
@@ -56,28 +60,30 @@ class Index extends React.Component {
           </div>
           <header>{header(data)}</header>
         </div>
-        <p>
-          You can contact me at&nbsp;
-          <span>
-            <a href="mailto:jenssen.lee@gmail.com">jenssen.lee@gmail.com</a>
-          </span>
-          {/* , I&nbsp;
-          <span>
-            <a href="https://jenlky.wordpress.com/">write</a>
-          </span>
-          &nbsp;for leisure too. */}
-        </p>
-        <p className="social-media">
-          <span>
-            <a href="https://github.com/jenlky">Github</a>
-          </span>
-          {/* <span>
-            <a href="https://twitter.com/Jenlky">Twitter</a>
-          </span> */}
-          <span>
-            <a href="https://www.linkedin.com/in/jenlky/">LinkedIn</a>
-          </span>
-        </p>
+        <div class='home-contact'>
+          <p>
+            You can contact me at&nbsp;
+            <span>
+              <a href="mailto:jenssen.lee@gmail.com">jenssen.lee@gmail.com</a>
+            </span>
+            {/* , I&nbsp;
+            <span>
+              <a href="https://jenlky.wordpress.com/">write</a>
+            </span>
+            &nbsp;for leisure too. */}
+          </p>
+          <p className="social-media">
+            <span>
+              <a href="https://github.com/jenlky">Github</a>
+            </span>
+            {/* <span>
+              <a href="https://twitter.com/Jenlky">Twitter</a>
+            </span> */}
+            <span>
+              <a href="https://www.linkedin.com/in/jenlky/">LinkedIn</a>
+            </span>
+          </p>
+        </div>
         <h3 className="recent-essays">Recent Essays</h3>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug

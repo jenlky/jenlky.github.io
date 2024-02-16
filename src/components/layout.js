@@ -2,7 +2,6 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 import "./global.css"
-import NavLinks from "../components/navLinks"
 
 class Layout extends React.Component {
   render() {
@@ -20,7 +19,6 @@ class Layout extends React.Component {
               className="main"
             >
               <div className="content">{children}</div>
-              <NavLinks />
             </main>
           )
         }}
