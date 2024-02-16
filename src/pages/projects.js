@@ -36,7 +36,7 @@ class Projects extends React.Component {
                   {title}
                 </Link>
               </h3>
-              {/* <small>{node.frontmatter.date}</small> */}
+              <small>{node.frontmatter.date}</small>
               <p
                 style={{ marginBottom: `21px` }}
                 dangerouslySetInnerHTML={{
@@ -71,7 +71,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM Do, YYYY")
+            date(formatString: "MMMM YYYY")
             title
           }
         }
