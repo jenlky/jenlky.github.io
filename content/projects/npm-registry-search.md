@@ -13,7 +13,6 @@ tags: ["npm registry"]
 - I want to list out the results of the search.
 - I want to see details like name of the package, author and package updated date.
 - I want to be able to route to a separate page so that the users can view details of the selected package.
-- I want to build 
 
 ####Solution
 - What if NPM registry sends back a million results? Pagination.
