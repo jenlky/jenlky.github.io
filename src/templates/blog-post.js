@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import NavLinks from "../components/navLinks"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -19,7 +20,10 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h2>{post.frontmatter.title}</h2>
+        <div class='header-parent'>
+          <h2>{post.frontmatter.title}</h2>
+          <NavLinks />
+        </div>
         <p
           style={{
             ...scale(-1 / 5),

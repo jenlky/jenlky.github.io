@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import NavLinks from "../components/navLinks"
 
 class ProjectPostTemplate extends React.Component {
   render() {
@@ -17,7 +18,10 @@ class ProjectPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h2>{post.frontmatter.title}</h2>
+        <div class='header-parent'>
+          <h2>{post.frontmatter.title}</h2>
+          <NavLinks />
+        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Layout>
     )
