@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jenssen Lee]]></title><description><![CDATA[Blog on my coding and tech experience]]></description><link>https://jenlky.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 16 Feb 2024 10:39:55 GMT</lastBuildDate><item><title><![CDATA[JumpStart by ThoughtWorks review]]></title><description><![CDATA[Yes, I know with the rise of IT in Singapore many coding bootcamps are popping up. This is a long overdued post but I hope it adds to the…]]></description><link>https://jenlky.netlify.com//blog/jumpstart-by-thoughtworks/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/jumpstart-by-thoughtworks/</guid><pubDate>Sun, 19 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;!-- 21 May - 8 August 2019 --&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jenssen Lee]]></title><description><![CDATA[Blog on my coding and tech experience]]></description><link>https://jenlky.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 23 Feb 2024 04:29:14 GMT</lastBuildDate><item><title><![CDATA[Migrating Blog from Netlify to Github Pages]]></title><description><![CDATA[My netlify blog wasn’t working because I forgot to renew the domain name jenlky.com. I had to contact Namecheap and used the WhoIs Lookup to…]]></description><link>https://jenlky.netlify.com//blog/migrating-blog-from-netlify-to-github-pages/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/migrating-blog-from-netlify-to-github-pages/</guid><pubDate>Fri, 16 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My netlify blog wasn’t working because I forgot to renew the domain name jenlky.com. I had to contact Namecheap and used the WhoIs Lookup to figure out someone has bought it over. What used to cost S$14 per year is now $688 because it has become a premium domain. &lt;/p&gt;
+&lt;p&gt;I decided to use Github pages instead. First I had to rename my repository name from &lt;code class=&quot;language-text&quot;&gt;my-blog&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;jenlky.github.io&lt;/code&gt; so the url will be the latter rather than &lt;code class=&quot;language-text&quot;&gt;jenlky.github.io/my-blog&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Next they recommend downloading &lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt; and adding a deploy script &lt;code class=&quot;language-text&quot;&gt;gh-pages -d dist&lt;/code&gt;. This is to push the build from &lt;code class=&quot;language-text&quot;&gt;/dist&lt;/code&gt; folder to &lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt; branch. I changed it to &lt;code class=&quot;language-text&quot;&gt;gh-pages -d public&lt;/code&gt; because GatsbyJS output the build to &lt;code class=&quot;language-text&quot;&gt;/public&lt;/code&gt; folder instead.&lt;/p&gt;
+&lt;p&gt;Afterwards I tried to run my blog. It turns out that GatsbyJS is now on v5.13 while mine was still running on v2.0. I took a look at the documentation &lt;a href=&quot;https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/&quot;&gt;https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/&lt;/a&gt; and figured out that it only runs on Node 10. &lt;/p&gt;
+&lt;p&gt;Lastly, I had to make some CSS changes remove obsolete projects, add new projects and clean up the bio to reflect the latest changes.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Search NPM registry]]></title><description><![CDATA[Search NPM registry Github Problem I want to build a search UI for  NPM registry  and be able to search with text inputs. I want to list out…]]></description><link>https://jenlky.netlify.com//projects/npm-registry-search/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/npm-registry-search/</guid><pubDate>Thu, 30 Nov 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://search-npm-registry.vercel.app/&quot;&gt;Search NPM registry&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/rws-react&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Problem&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;I want to build a search UI for &lt;a href=&quot;https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md&quot;&gt;NPM registry&lt;/a&gt; and be able to search with text inputs.&lt;/li&gt;
+&lt;li&gt;I want to list out the results of the search.&lt;/li&gt;
+&lt;li&gt;I want to see details like name of the package, author and package updated date.&lt;/li&gt;
+&lt;li&gt;I want to be able to route to a separate page so that the users can view details of the selected package.&lt;/li&gt;
+&lt;li&gt;I want to build &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Solution&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;What if NPM registry sends back a million results? Pagination.&lt;/li&gt;
+&lt;li&gt;Pagination would require some math for the api call to fetch results number 1-10 for page 1, 11-20 for page 2 and so on.&lt;/li&gt;
+&lt;li&gt;Displays error message if no npm packages were found&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Stack&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Programming Languages: Typescript&lt;/li&gt;
+&lt;li&gt;Frontend: NextJS(React), Material UI&lt;/li&gt;
+&lt;li&gt;Testing: Cypress for automated end-to-end testing&lt;/li&gt;
+&lt;li&gt;Misc: Axios&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[JumpStart by ThoughtWorks review]]></title><description><![CDATA[Yes, I know with the rise of IT in Singapore many coding bootcamps are popping up. This is a long overdued post but I hope it adds to the…]]></description><link>https://jenlky.netlify.com//blog/jumpstart-by-thoughtworks/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/jumpstart-by-thoughtworks/</guid><pubDate>Sun, 19 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;!-- 21 May - 8 August 2019 --&gt;
 &lt;p&gt;Yes, I know with the rise of IT in Singapore many coding bootcamps are popping up. This is a long overdued post but I hope it adds to the conversation.&lt;/p&gt;
 &lt;p&gt;I would recommend programs by &lt;a href=&quot;https://www.imda.gov.sg/imtalent/programmes/tipp#EligiblePartnersandCourses&quot;&gt;Tech Immersion and Placement Programme&lt;/a&gt; (TIPP) partners solely because it’s subsidied for Singaporeans.&lt;/p&gt;
 &lt;p&gt;You might be wondering out of all the coding bootcamps like General Assembly and Trent College - why &lt;a href=&quot;https://www.thoughtworks.com/jumpstart&quot;&gt;JumpStart&lt;/a&gt;? Well, for Singaporeans it’s the cheapest at only 1k for three months compared to GA’s 5-6k! For Permanent Residents (PR), I vaguely recall a bootcamp mate mentioned that he paid 6-7k. Not sure.&lt;/p&gt;
@@ -8,47 +34,20 @@
 &lt;p&gt;ThoughtWorks is also a huge believer in pair programming. Imagine how stressful it is to have a real-life compiler beside you to scrutinise your code. You can’t get that sort of accountability by coding alone. Pairing forces you to explain your streams of consciousness and tests your understanding because first you have to know before you can teach. IMO this is the fastest way for a Junior engineer to level up by gaining access to a senior’s treasure trove of experience. You learn about the different problem solving approaches, the tradeoffs, library and language syntax, keyboard shortcuts. The senior gets to consolidate his/her knowledge and perhaps write a book…&lt;/p&gt;
 &lt;p&gt;We practised Agile methodology whereby we spoke with the client and noted their feature requests. We translated them to user stories and wrote it down on index cards. As a team, we estimated the story points and our velocity (how many points we can finish in a week). We prioritised the features based on logical workflow and based on which features will deliver maximum value to the client.&lt;/p&gt;
 &lt;p&gt;In conclusion, both ThoughtWorks and GA attract different kinds of people. Despite what I said, JumpStart has some prerequisites: applicants are required to do 5-6 Data Structure and Algorithm questions and are assessed on it before they are accepted. GA does not have similar requirements as far as I know. You can think of it like GA takes you from 0% - 60%, while JumpStart takes you from 20% - 80%.&lt;/p&gt;
-&lt;!-- what is trunk-based development? everything on master branch something something --&gt;</content:encoded></item><item><title><![CDATA[Apartments Residential Management System (ARMS)]]></title><description><![CDATA[Arms is the frontend, while Legs is the backend and the server. ARMS LEGS Arms github Legs github Problem ARMS help ThoughtWorks Singapore…]]></description><link>https://jenlky.netlify.com//projects/arms/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/arms/</guid><pubDate>Fri, 02 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;!-- ![ShopLah front page](../assets/shoplah.webp &quot;ShopLah front page&quot;) --&gt;
-&lt;p&gt;Arms is the frontend, while Legs is the backend and the server.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://demo-armadillo-arms.herokuapp.com/&quot;&gt;ARMS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://demo-armadillo-legs.herokuapp.com/&quot;&gt;LEGS&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/armadillo-apps/arms2&quot;&gt;Arms github&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/armadillo-apps/legs&quot;&gt;Legs github&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Problem&lt;/h3&gt;
-&lt;p&gt;ARMS help ThoughtWorks Singapore manage housing leases to foreign employees who travel to Singapore for projects.&lt;/p&gt;
-&lt;p&gt;Client was using spreadsheet until we built a centralised system to allocate occupants to apartments and vice versa. Client can now easily generate reports and track expenses.&lt;/p&gt;
-&lt;h3&gt;Solution&lt;/h3&gt;
-&lt;p&gt;Our group project was for 3 weeks. Since we had limited time, we had to ascertain the necessary features our Minimum Viable Product (MVP) should deliver to provide maximum utility to the user. Afterwards, we slotted them into each sprint based on our velocity.&lt;/p&gt;
-&lt;p&gt;Our MVP is a centralised system which allows the user to create apartments and occupants, and allocate occupants to apartments and vice versa.&lt;/p&gt;
-&lt;h4&gt;Stack&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Frontend:&lt;/em&gt; React, Proptypes&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Backend:&lt;/em&gt; Express, Mongoose&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Testing:&lt;/em&gt; Jest, Jest-MongoDB, React Testing Library, Cypress for automated end-to-end testing&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;DevOps:&lt;/em&gt; CircleCi, Heroku, Netlify&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Misc:&lt;/em&gt; Axios, CORS, Moment, Faker for faking test data&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Accomplishments&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Practised Test Driven Development (TDD) and followed Agile practices&lt;/li&gt;
-&lt;li&gt;Brainstormed user stories, decided on MVP, estimated complexity of each card and our velocity, slotted the user stories into our sprints&lt;/li&gt;
-&lt;li&gt;Pair programmed every day and swapped pairs frequently; rotated and took turns to be BA/QA&lt;/li&gt;
-&lt;li&gt;Trunk based development: everyone worked on master branch instead of creating new feature branches&lt;/li&gt;
-&lt;li&gt;Both frontend and backend deployed to Heroku&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Nested Todo List]]></title><description><![CDATA[Todo List Github Problem I wanted an overview of what I studied and be able to drill down to the specific subtopic. Solution Nested list…]]></description><link>https://jenlky.netlify.com//projects/nested-todo-list/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/nested-todo-list/</guid><pubDate>Mon, 08 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;!-- ![ShopLah front page](../assets/shoplah.webp &quot;ShopLah front page&quot;) --&gt;
+&lt;!-- what is trunk-based development? everything on master branch something something --&gt;</content:encoded></item><item><title><![CDATA[Nested Todo List]]></title><description><![CDATA[Todo List Github Problem I wanted an overview of what I studied and be able to drill down to the specific subtopic. Solution Nested list…]]></description><link>https://jenlky.netlify.com//projects/nested-todo-list/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/nested-todo-list/</guid><pubDate>Mon, 08 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;!-- ![ShopLah front page](../assets/shoplah.webp &quot;ShopLah front page&quot;) --&gt;
 &lt;p&gt;&lt;a href=&quot;https://jumpstart-todo-list.netlify.com/&quot;&gt;Todo List&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/react-app-todo-list&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
-&lt;h3&gt;Problem&lt;/h3&gt;
+&lt;h4&gt;Problem&lt;/h4&gt;
 &lt;p&gt;I wanted an overview of what I studied and be able to drill down to the specific subtopic.&lt;/p&gt;
-&lt;h3&gt;Solution&lt;/h3&gt;
+&lt;h4&gt;Solution&lt;/h4&gt;
 &lt;p&gt;Nested list items that can be toggled to show its children. Useful for studying and promote active learning.
 Users can sign up, login, create multiple lists and only see their own list.&lt;/p&gt;
 &lt;h4&gt;Stack&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Frontend:&lt;/em&gt; React, Material-UI, SASS&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Backend:&lt;/em&gt; Express, Mongoose, Bcrypt, JSON web token, Joi for data validation&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Testing:&lt;/em&gt; Jest, Jest-MongoDB, React Testing Library, Cypress for automated end-to-end testing&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Misc:&lt;/em&gt; Axios, Dotenv&lt;/li&gt;
+&lt;li&gt;Frontend: React, Material-UI, SASS&lt;/li&gt;
+&lt;li&gt;Backend: Express, Mongoose, Bcrypt, JSON web token, Joi for data validation&lt;/li&gt;
+&lt;li&gt;Testing: Jest, Jest-MongoDB, React Testing Library, Cypress for automated end-to-end testing&lt;/li&gt;
+&lt;li&gt;Misc: Axios, Dotenv&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Accomplishments&lt;/h4&gt;
 &lt;ul&gt;
@@ -149,59 +148,7 @@ However, it requires a rooted device - I proceed to root and back up all the des
 &lt;li&gt;
 &lt;p&gt;Reboot to system&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[ShopLah]]></title><description><![CDATA[Shoplah Github Retrieves and displays products from Express API. Users must log in to add, remove products and change item quantity.
-When…]]></description><link>https://jenlky.netlify.com//projects/shoplah/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/shoplah/</guid><pubDate>Thu, 04 Apr 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8d4d7e6fa0dc304cfd7a974431836f53/34ef4/shoplah.webp&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 47.447916666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQAwCdASoUAAkAPtFUpEuoJKOhsAgBABoJZw24QAIGoGssgAD+88FjoE+DoRRRR98oVNvno88fPezKOe+cn8M5Gmy18sygO8XAuR37q+ArwG+fRd6C7/FaJMv+rvOAf5ClcAAA&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;ShopLah front page&quot;
-        title=&quot;ShopLah front page&quot;
-        src=&quot;/static/8d4d7e6fa0dc304cfd7a974431836f53/1a2f4/shoplah.webp&quot;
-        srcset=&quot;/static/8d4d7e6fa0dc304cfd7a974431836f53/cc182/shoplah.webp 148w,
-/static/8d4d7e6fa0dc304cfd7a974431836f53/f7e40/shoplah.webp 295w,
-/static/8d4d7e6fa0dc304cfd7a974431836f53/1a2f4/shoplah.webp 590w,
-/static/8d4d7e6fa0dc304cfd7a974431836f53/4837b/shoplah.webp 885w,
-/static/8d4d7e6fa0dc304cfd7a974431836f53/2f819/shoplah.webp 1180w,
-/static/8d4d7e6fa0dc304cfd7a974431836f53/799b2/shoplah.webp 1770w,
-/static/8d4d7e6fa0dc304cfd7a974431836f53/34ef4/shoplah.webp 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://shoplah.herokuapp.com/&quot;&gt;Shoplah&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/shoplah&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Retrieves and displays products from Express API. Users must log in to add, remove products and change item quantity.
-When user logins, retrieve added products from database. Limits access to cart, profile and checkout page to logged in users.
-Displays and tallies the total quantity and price.&lt;/p&gt;
-&lt;h3&gt;Accomplishments&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Frontend:&lt;/em&gt; React, Redux and Material-UI&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Backend:&lt;/em&gt; Express and Mongoose&lt;/li&gt;
-&lt;li&gt;Created REST API endpoint&lt;/li&gt;
-&lt;li&gt;Tested /GET routes&lt;/li&gt;
-&lt;li&gt;User authentication with passport.js, passport-auth0 and express-session&lt;/li&gt;
-&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
-&lt;li&gt;Deployed to Heroku successfully&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Reasons for choosing ShopLah libraries]]></title><description><![CDATA[ShopLah was created because I wanted to build a simple ecommerce website and familiarise myself more with authentication process and full…]]></description><link>https://jenlky.netlify.com//blog/reasons-for-choosing-shoplah-libraries/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/reasons-for-choosing-shoplah-libraries/</guid><pubDate>Wed, 03 Apr 2019 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ShopLah was created because I wanted to build a simple ecommerce website and familiarise myself more with authentication process and full-stack app flow. &lt;/p&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Reasons for choosing ShopLah libraries]]></title><description><![CDATA[ShopLah was created because I wanted to build a simple ecommerce website and familiarise myself more with authentication process and full…]]></description><link>https://jenlky.netlify.com//blog/reasons-for-choosing-shoplah-libraries/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/reasons-for-choosing-shoplah-libraries/</guid><pubDate>Wed, 03 Apr 2019 15:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ShopLah was created because I wanted to build a simple ecommerce website and familiarise myself more with authentication process and full-stack app flow. &lt;/p&gt;
 &lt;p&gt;It was created with the following libraries:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Client:&lt;/strong&gt; React, React Router, Redux (redux-thunk, redux-logger, redux-persist), Material-UI&lt;/p&gt;
@@ -422,235 +369,4 @@ Unordered list:
 - Sulfur
 * Ammonia
   + Bomb
---&gt;</content:encoded></item><item><title><![CDATA[Flashcard App]]></title><description><![CDATA[Flashcard Github Created during Chingu Voyage, a collaborative environment where hundreds of people build projects together to learn.
-It…]]></description><link>https://jenlky.netlify.com//projects/flashcard-app/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/flashcard-app/</guid><pubDate>Mon, 23 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d1786e43b77c7c527a97d4176ab89159/95bc2/flashcard-app-1400.webp&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 47.85714285714286%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAwCdASoUAAoAPtFUpEuoJKOhsAgBABoJQBOmUABp2qh2b7rpFj7sAP4nGMxaFPu7oN9UIuFEM/VxS4FKJUrCJbB9yu8YoMAAAA==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Flashcard App&quot;
-        title=&quot;Flashcard App&quot;
-        src=&quot;/static/d1786e43b77c7c527a97d4176ab89159/1a2f4/flashcard-app-1400.webp&quot;
-        srcset=&quot;/static/d1786e43b77c7c527a97d4176ab89159/cc182/flashcard-app-1400.webp 148w,
-/static/d1786e43b77c7c527a97d4176ab89159/f7e40/flashcard-app-1400.webp 295w,
-/static/d1786e43b77c7c527a97d4176ab89159/1a2f4/flashcard-app-1400.webp 590w,
-/static/d1786e43b77c7c527a97d4176ab89159/4837b/flashcard-app-1400.webp 885w,
-/static/d1786e43b77c7c527a97d4176ab89159/2f819/flashcard-app-1400.webp 1180w,
-/static/d1786e43b77c7c527a97d4176ab89159/95bc2/flashcard-app-1400.webp 1400w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://shrouded-taiga-52624.herokuapp.com/&quot;&gt;Flashcard&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/chingu-voyage4/Bears-Team-9&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Created during Chingu Voyage, a collaborative environment where hundreds of people build projects together to learn.
-It allows users to create a topic, insert questions and answers.
-Users can only add card or delete from the topic they created,
-but they can study all the existing topics (even if they didn’t create it).&lt;/p&gt;
-&lt;h3&gt;Accomplishments&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Frontend:&lt;/em&gt; React and Redux&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Backend:&lt;/em&gt; Express&lt;/li&gt;
-&lt;li&gt;Practised Git and did my first PR&lt;/li&gt;
-&lt;li&gt;Made it responsive using media queries and refactoring CSS&lt;/li&gt;
-&lt;li&gt;Used table and grid for layout&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[React Wikipedia]]></title><description><![CDATA[React Wikipedia Github Searches the typed word at Wikipedia and returns the top 10 results.
-When you click on any of the results, it directs…]]></description><link>https://jenlky.netlify.com//projects/react-wikipedia/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/react-wikipedia/</guid><pubDate>Sun, 22 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/303d70e2b133d2e6e0314e25aed709d3/a987b/react-wikipedia.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 47.86458333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABsklEQVQoz2WP3U4aYRCGvZ+mB1C1yv7z7T+g9qwlHlhCMeqRBlguoTGeG3uqEXoF3kijFFx2F3aRUrPCsizB6H4OaFQ0eTOZTOaZ9505jM1ZWRg3w9C+8fTO/6rbr4Xh4/C1npbnnjtYGt9eDoOa55/3Bw3Pt4eBM/Cbnle9v288KwyNN7AxHrd6vZbrmvsHP9Pr69lcdnM7t72zuTXRVjb3YyPzPZPNfP2WPjs7xbgDVybwNJU5HFq2rbfb+u5efmmZQ3yCpIVlAsWmWopxoBiJPnxcPD45xLh7d9d4iT0aNdvtxtWVni8UaUaQ1VUkqCTNkxQPlaIFihHYuByJEqfloxf4yTmwHEe/vraKWolmxUTyiyinWE4CgEMyVBDDSZFPRLly9MbZGI1ahlG1nZqmlcBKkJK8oApSApqJxEmNIyU6T87Aj85B0LSsv45dLxS1GAE/qyySmbjEsCJFT5MzPIek+UWqXPmF8b8Z2PfNbtdy3VaxVIL3lMQqvA1VklNxXoFbHFIgyMJnuvL7HTwYGPX6H9O6yBc0MFGTa6KUgqgAy0oKDsnqCgwJElVeOT8AsHiCSaJBbfoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;React Wikipedia&quot;
-        title=&quot;React Wikipedia&quot;
-        src=&quot;/static/303d70e2b133d2e6e0314e25aed709d3/b9e4f/react-wikipedia.png&quot;
-        srcset=&quot;/static/303d70e2b133d2e6e0314e25aed709d3/cf440/react-wikipedia.png 148w,
-/static/303d70e2b133d2e6e0314e25aed709d3/d2d38/react-wikipedia.png 295w,
-/static/303d70e2b133d2e6e0314e25aed709d3/b9e4f/react-wikipedia.png 590w,
-/static/303d70e2b133d2e6e0314e25aed709d3/f9b6a/react-wikipedia.png 885w,
-/static/303d70e2b133d2e6e0314e25aed709d3/2d849/react-wikipedia.png 1180w,
-/static/303d70e2b133d2e6e0314e25aed709d3/bbefa/react-wikipedia.png 1770w,
-/static/303d70e2b133d2e6e0314e25aed709d3/a987b/react-wikipedia.png 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://jenlky.github.io/react-wikipedia/&quot;&gt;React Wikipedia&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/react-wikipedia&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Searches the typed word at Wikipedia and returns the top 10 results.
-When you click on any of the results, it directs you to the said result.&lt;/p&gt;
-&lt;h3&gt;Accomplishments&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Create React App boilerplate&lt;/li&gt;
-&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
-&lt;li&gt;Wikipedia OpenSearch&lt;/li&gt;
-&lt;li&gt;Used CSS grid for layout&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[React Quote Machine]]></title><description><![CDATA[React Quote Machine Github Generates a new design quote when it’s clicked. Allows user to tweet said quote. Accomplishments Create React App…]]></description><link>https://jenlky.netlify.com//projects/react-quote-machine/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/react-quote-machine/</guid><pubDate>Wed, 11 Apr 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e5851170651fd5ea02a52c71ae933d90/a987b/react-quote-machine.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 47.86458333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABE0lEQVQoz2P4PMUFjj5NhqLPU1w/Q0nXL1NckcRREAMy5/csx/9zHT5Pt389GYRegcmXk+y/zXD4P8fh1yzHT3g0nywN3JERvjMzbFtm2PbMsB3Z4Tuzw3dkhe/OjdiVHXmqzP/rNKdPaJo/Qd3sVGpeEqoxNU5/YpRWf7T2hBCl7iD5zkC5zmCFTmehnlKznJ+z7D5NdsWi+fNkpxLrUn+VSeGK7X4SLf6SLX7iTb5izT6iTcFyrcHKE2psc3/MwK7Z9ctkxxqPogD1lljFshiVyhhlBIpXqwxXrm9zSfsx0x5dMxRNdXnW5fywzeVhhysmut/q8qzb5ctU3AH2bZrL9+k4EVAWX1TB4xMXwqeZVAQAsyNIWjyjclYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;React Quote Machine&quot;
-        title=&quot;React Quote Machine&quot;
-        src=&quot;/static/e5851170651fd5ea02a52c71ae933d90/b9e4f/react-quote-machine.png&quot;
-        srcset=&quot;/static/e5851170651fd5ea02a52c71ae933d90/cf440/react-quote-machine.png 148w,
-/static/e5851170651fd5ea02a52c71ae933d90/d2d38/react-quote-machine.png 295w,
-/static/e5851170651fd5ea02a52c71ae933d90/b9e4f/react-quote-machine.png 590w,
-/static/e5851170651fd5ea02a52c71ae933d90/f9b6a/react-quote-machine.png 885w,
-/static/e5851170651fd5ea02a52c71ae933d90/2d849/react-quote-machine.png 1180w,
-/static/e5851170651fd5ea02a52c71ae933d90/bbefa/react-quote-machine.png 1770w,
-/static/e5851170651fd5ea02a52c71ae933d90/a987b/react-quote-machine.png 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://jenlky.github.io/react-quote-machine/&quot;&gt;React Quote Machine&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/react-quote-machine&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Generates a new design quote when it’s clicked. Allows user to tweet said quote.&lt;/p&gt;
-&lt;h3&gt;Accomplishments&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Create React App boilerplate&lt;/li&gt;
-&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
-&lt;li&gt;Consumed Quotes on Design API&lt;/li&gt;
-&lt;li&gt;Used ES6 JavaScript and fetch&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Tribute Page]]></title><description><![CDATA[Tribute Page Github Built as a tribute to Elon Musk with a timeline of his life.
-I chose Elon Musk because I admire and respect his tenacity…]]></description><link>https://jenlky.netlify.com//projects/tribute-page/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/tribute-page/</guid><pubDate>Mon, 26 Mar 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d61e527a17c3867df981aded4f1082b8/fa9fe/tribute-page-557.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 557px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 47.93536804308797%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAABcRAAAXEQHKJvM/AAACEklEQVQoz01R30/TUBTuH2BifDTxwT/GNxMTn3hQJ4oxajAYETQKgxAkLFEyDXFMTMxkgaBgAogadYsMN8bKwm5at3W2Y5N2d5lrqevW2x/b6u0a0S+559yce74v556PCG1ufgiFuELBsqx2u239RbPZNAyj1WodVpzX79nsx3AYs75EIsS7WOztxgbNcZqmVapVUZYbjQZu0nUdV0zT/EfuxFQuh/sxay0aJV7HYsskObe6cv6iq7+7q6frTN/QAxUhRVEw2ZFwVIyOEMmy89Ho0vb2m60tIpBIBAHwLS32X3dlVgLf/BP3hoek34oglCAsl0qwZANKkiSKEqrXYxw3G4+/IskASRIzOzt+AJ69X5/2uBNT7vijYe/jybIoCbyAObwdcYZY6uc+j1OY5Z6SpD+ZnEkmCW8q5aXp55GvV65dmrpwNjg+OP5iVjqQK5WKaEP6VcWbEPHBF+VA/ry359ndfQKAFwDiIQCeH+xYcO7Y0SOu06fGbl297/PVFAVC2JnZHtv+QrmMh6jL8nqxOALAJEVNUBThpunRfH5kYf7kiePdrnMvfdM37tzGizUbptEwnIhqKqppak2zmu1Vnh+kqNF02p1OE3cZpjebXSsWhDy3XxKQbpQh/N/wQ6NandqyIPRmMpg1wDBEH8teZphPomgZhm7awPYghFSkYiAbqgPHqkUIe3I5zLrJsn8Aki7sVsxloX0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Tribute Page&quot;
-        title=&quot;Tribute Page&quot;
-        src=&quot;/static/d61e527a17c3867df981aded4f1082b8/fa9fe/tribute-page-557.png&quot;
-        srcset=&quot;/static/d61e527a17c3867df981aded4f1082b8/cf440/tribute-page-557.png 148w,
-/static/d61e527a17c3867df981aded4f1082b8/d2d38/tribute-page-557.png 295w,
-/static/d61e527a17c3867df981aded4f1082b8/fa9fe/tribute-page-557.png 557w&quot;
-        sizes=&quot;(max-width: 557px) 100vw, 557px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://jenlky.github.io/tribute-page/&quot;&gt;Tribute Page&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/tribute-page&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Built as a tribute to Elon Musk with a timeline of his life.
-I chose Elon Musk because I admire and respect his tenacity, work ethics and drive towards serial entrepreneurship.
-Most importantly, I’m impressed and inspired by his motivation for doing all these things -
-he truly believes in building a better world.&lt;/p&gt;
-&lt;h3&gt;Accomplishments&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
-&lt;li&gt;Responsive image&lt;/li&gt;
-&lt;li&gt;Refactored CSS to SCSS&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Twitch TV]]></title><description><![CDATA[Twitch TV Github Tracks twitch streamers and shows what they’re streaming if they’re online. Allows user to filter based on status…]]></description><link>https://jenlky.netlify.com//projects/twitch-tv/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/twitch-tv/</guid><pubDate>Sun, 25 Mar 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6a587fd98094e14db42a3ab4aacd7bad/65025/twitch-tv-573.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 573px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 47.81849912739965%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAABcRAAAXEQHKJvM/AAABU0lEQVQoz3XQXUvCUBjAcT9bXaURdBHdlEne1CDLCqa5mbglitU2XQh9g0ykb5CsApnNlzJmUKBCU3fmps6clx1dF5ETfnBunv95sym9FgRUSTdUoZgn8dA1m0pe0KkEm2LYcAAP+QNB1M9SiXrzQ9M7QJPMBLKZi6x+wbhQfEJRL30Vi1MklYxeMhE8dBwIHp5g3lMCrX2+9IbAIgY9SR3IjfZ7Tri7r6Y5McOJt7nqDfeWgR5rWU5M1zui2pfh5MzJmqSPlMJrGfETRxHmgKD3TWHKhODx52plMAKW15aGhpIvVbb3osuuM4eTWNqYsG+SU8TCWpDjheFYgZMW8fdYeSgUV92xFTfpcBF254RjizQtrk9jY06sG12+JOx4MA+WRHz0LjqB+Jgp2u095ytlfQTk2Wv/fpsmtUCzDRqW/r7WIoa6/fY8/yYtYrj9PLPxDy7y1ivNRgTAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Twitch TV&quot;
-        title=&quot;Twitch TV&quot;
-        src=&quot;/static/6a587fd98094e14db42a3ab4aacd7bad/65025/twitch-tv-573.png&quot;
-        srcset=&quot;/static/6a587fd98094e14db42a3ab4aacd7bad/cf440/twitch-tv-573.png 148w,
-/static/6a587fd98094e14db42a3ab4aacd7bad/d2d38/twitch-tv-573.png 295w,
-/static/6a587fd98094e14db42a3ab4aacd7bad/65025/twitch-tv-573.png 573w&quot;
-        sizes=&quot;(max-width: 573px) 100vw, 573px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://jenlky.github.io/twitch-tv/&quot;&gt;Twitch TV&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/jenlky/twitch-tv&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Tracks twitch streamers and shows what they’re streaming if they’re online. Allows user to filter based on status.&lt;/p&gt;
-&lt;h3&gt;Accomplishments&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
-&lt;li&gt;Consumed Twitch API&lt;/li&gt;
-&lt;li&gt;jQuery for event handling&lt;/li&gt;
-&lt;li&gt;Bootstrap&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item></channel></rss>
+--&gt;</content:encoded></item></channel></rss>
