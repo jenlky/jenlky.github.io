@@ -4,9 +4,7 @@ date: "2023-11-30"
 tags: ["npm registry"]
 ---
 
-[Search NPM registry](https://search-npm-registry.vercel.app/)
-
-[Github](https://github.com/jenlky/rws-react)
+[Project URL](https://search-npm-registry.vercel.app/), [Github](https://github.com/jenlky/rws-react)
 
 ####Problem
 - I want to build a search UI for [NPM registry](https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md) and be able to search with text inputs.
