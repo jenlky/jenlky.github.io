@@ -46,7 +46,7 @@ class Index extends React.Component {
             <p>Hi, my name is Jenssen Lee or my friends call me Jens!</p>
             <p>
               I'm a Singapore-based Software Engineer who has 4 years of working experience. 
-              Here's a little bit about myself: I'm an avid runner and I've travelled overseas to run a marathon before.
+              A little bit about myself: I'm an avid runner and I've travelled overseas to run a marathon before.
             </p>
             <p>
               My background is from a fintech SME and my expertise lies in JavaScript.
