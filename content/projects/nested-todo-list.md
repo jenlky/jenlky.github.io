@@ -6,7 +6,7 @@ tags: ["Todo List", "Full stack", "React"]
 
 <!-- ![ShopLah front page](../assets/shoplah.webp "ShopLah front page") -->
 
-[Project URL](https://jumpstart-todo-list.netlify.com/), [Github](https://github.com/jenlky/react-app-todo-list)
+[Project URL](https://jumpstart-todo-list.netlify.app/), [Github](https://github.com/jenlky/react-app-todo-list)
 
 ####Problem
 I wanted an overview of what I studied and be able to drill down to the specific subtopic.
