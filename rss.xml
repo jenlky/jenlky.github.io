@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jenssen Lee]]></title><description><![CDATA[Blog on my coding and tech experience]]></description><link>https://jenlky.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 23 Feb 2024 06:05:28 GMT</lastBuildDate><item><title><![CDATA[Migrating Blog from Netlify to Github Pages]]></title><description><![CDATA[My netlify blog wasn’t working because I forgot to renew the domain name jenlky.com. I had to contact Namecheap and used the WhoIs Lookup to…]]></description><link>https://jenlky.netlify.com//blog/migrating-blog-from-netlify-to-github-pages/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/migrating-blog-from-netlify-to-github-pages/</guid><pubDate>Fri, 16 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My netlify blog wasn’t working because I forgot to renew the domain name jenlky.com. I had to contact Namecheap and used the WhoIs Lookup to figure out someone has bought it over. What used to cost S$14 per year is now $688 because it has become a premium domain. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jenssen Lee]]></title><description><![CDATA[Blog on my coding and tech experience]]></description><link>https://jenlky.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 23 May 2024 05:23:57 GMT</lastBuildDate><item><title><![CDATA[Migrating Blog from Netlify to Github Pages]]></title><description><![CDATA[My netlify blog wasn’t working because I forgot to renew the domain name jenlky.com. I had to contact Namecheap and used the WhoIs Lookup to…]]></description><link>https://jenlky.netlify.com//blog/migrating-blog-from-netlify-to-github-pages/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/migrating-blog-from-netlify-to-github-pages/</guid><pubDate>Fri, 16 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My netlify blog wasn’t working because I forgot to renew the domain name jenlky.com. I had to contact Namecheap and used the WhoIs Lookup to figure out someone has bought it over. What used to cost S$14 per year is now $688 because it has become a premium domain. &lt;/p&gt;
 &lt;p&gt;I decided to use Github pages instead. First I had to rename my repository name from &lt;code class=&quot;language-text&quot;&gt;my-blog&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;jenlky.github.io&lt;/code&gt; so the url will be the latter rather than &lt;code class=&quot;language-text&quot;&gt;jenlky.github.io/my-blog&lt;/code&gt;. &lt;/p&gt;
 &lt;p&gt;Next they recommend downloading &lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt; and adding a deploy script &lt;code class=&quot;language-text&quot;&gt;gh-pages -d dist&lt;/code&gt;. This is to push the build from &lt;code class=&quot;language-text&quot;&gt;/dist&lt;/code&gt; folder to &lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt; branch. I changed it to &lt;code class=&quot;language-text&quot;&gt;gh-pages -d public&lt;/code&gt; because GatsbyJS output the build to &lt;code class=&quot;language-text&quot;&gt;/public&lt;/code&gt; folder instead.&lt;/p&gt;
 &lt;p&gt;Afterwards I tried to run my blog. It turns out that GatsbyJS is now on v5.13 while mine was still running on v2.0. I took a look at the documentation &lt;a href=&quot;https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/&quot;&gt;https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/&lt;/a&gt; and figured out that it only runs on Node 10. &lt;/p&gt;
@@ -22,6 +22,66 @@
 &lt;li&gt;Frontend: NextJS(React), Material UI&lt;/li&gt;
 &lt;li&gt;Testing: Cypress for automated end-to-end testing&lt;/li&gt;
 &lt;li&gt;Misc: Axios&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Precepts ProviTrust (Frontend)]]></title><description><![CDATA[Dev site ,  Live site Problem Client wants to create a digital trust where users can defer and stagger the payout to nominees should they…]]></description><link>https://jenlky.netlify.com//projects/precepts/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/precepts/</guid><pubDate>Fri, 31 Dec 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://precepts.wen-pl.com/dev/&quot;&gt;Dev site&lt;/a&gt;, &lt;a href=&quot;https://app.provitrust.com/live/&quot;&gt;Live site&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Problem&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Client wants to create a digital trust where users can defer and stagger the payout to nominees should they deem them financially immature or vulnerable of young or elder age. &lt;/li&gt;
+&lt;li&gt;We use Dropbox Sign (formerly HelloSign) for e-signing. A magic link is sent to the user and they click on it to sign. However, if they click on it and remain inactive for a certain amount of time the link will expire. &lt;/li&gt;
+&lt;li&gt;Client wants user to be notified when the website is down for maintenance. &lt;/li&gt;
+&lt;li&gt;Client wants a promo code to allow users discounts of various amounts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Solution&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Client didn’t have any hard requirements for the user interface. I did wireframe on figma with the help of our in-house designer to have an idea of the visuals.&lt;/li&gt;
+&lt;li&gt;Superadmin can refresh signatures to ensure new magic link is being sent to the users who didn’t manage to sign.&lt;/li&gt;
+&lt;li&gt;Superadmin can create a maintenance banner from a certain time.&lt;/li&gt;
+&lt;li&gt;Superadmin can create promo codes that can be turned on and off. Another flow has to be created for promo code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Stack&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Programming Languages: Typescript&lt;/li&gt;
+&lt;li&gt;Frontend: Quasar (Vue), VueX&lt;/li&gt;
+&lt;li&gt;Testing: Jest, Cypress for automated end-to-end testing&lt;/li&gt;
+&lt;li&gt;Misc: Axios&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Further reads&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;How it works: 
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9d4eeb41b9ab170ad52ed0b184032417/756ed/provitrust-example.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 45.575221238938056%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAACU0lEQVQozyVR/U/TUBTtf4uJhkhEkcQIiCD6gyiSiIkaRQKIQaOEAGIyMFsi+x7burZb14+t7ToeA9e13Wj3jo/6kpt77rsnJ+feyy2+/Ykbk6sYf7yF2aUdzL3axd25LYzc/4hnK/t48f4Xw6u4Pb2Be3PbmF78gfnl/5zRh+sYnVrHndktmO0urh/XOvuLeKqK68xLTVQEHbLWRiJVQ1U7g2FfgBfZn24jlsygaRHkeRF1zUbmVEOmyCKTRqspMbkAXN/rg89JkbooNcCXRAz8EKnjLHquC4f1BUGBajUwtbIA2azjj5iE3W1DLGhQRQmV7AGSsU0gdMGZrQ4SJ2LkMJmvo1Bpgpw74JnT80sHunWBsmQyhxaqqg7J0JCop1E0JdRlG3qjBbOpQldr8DwP3Mt3h7j5YI3t8DNmFr9HMT67iZHJT1h4vY/nbMcjEx8w+eQbJua/sryNp8t7mF/axdjMBm6xPY49+sI4q3izFmMjDwJ0ez6GFKjKOnheAoNsbBd+v49eP8BwCOwljhDPpSGoGiy1hI6tsv4VdL0Gw1ChFCqwZA2c6/q0IjauNWipWKPZDB9hMRejtilTx7+iZb5KM3yRFuolmrXyNB4/oEIpH/Hcc4WGrk31/AmVhSrl2vYlckkBgxBomB3UlFbk8OfeDsrlU7gDsOsb0dECx4BUOGTHiIEYPFrVLGq5I4inx1D43wg9G1zX8UnD6hDGJ7JikXSqFGHQgITDkPT8K+J6fTIIQuJc2sRQyqTX0UngEdI2ZdJktaHyxNIrxO8R8g+5nmuupqZifAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;How Provitrust works&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9d4eeb41b9ab170ad52ed0b184032417/b9e4f/provitrust-example.png&quot;
+        srcset=&quot;/static/9d4eeb41b9ab170ad52ed0b184032417/cf440/provitrust-example.png 148w,
+/static/9d4eeb41b9ab170ad52ed0b184032417/d2d38/provitrust-example.png 295w,
+/static/9d4eeb41b9ab170ad52ed0b184032417/b9e4f/provitrust-example.png 590w,
+/static/9d4eeb41b9ab170ad52ed0b184032417/f9b6a/provitrust-example.png 885w,
+/static/9d4eeb41b9ab170ad52ed0b184032417/756ed/provitrust-example.png 904w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.preceptsgroup.com/the-things-to-know-about-provitrust-series-1/&quot;&gt;https://www.preceptsgroup.com/the-things-to-know-about-provitrust-series-1/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[JumpStart by ThoughtWorks review]]></title><description><![CDATA[Yes, I know with the rise of IT in Singapore many coding bootcamps are popping up. This is a long overdued post but I hope it adds to the…]]></description><link>https://jenlky.netlify.com//blog/jumpstart-by-thoughtworks/</link><guid isPermaLink="false">https://jenlky.netlify.com//blog/jumpstart-by-thoughtworks/</guid><pubDate>Sun, 19 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;!-- 21 May - 8 August 2019 --&gt;
 &lt;p&gt;Yes, I know with the rise of IT in Singapore many coding bootcamps are popping up. This is a long overdued post but I hope it adds to the conversation.&lt;/p&gt;
 &lt;p&gt;I would recommend programs by &lt;a href=&quot;https://www.imda.gov.sg/imtalent/programmes/tipp#EligiblePartnersandCourses&quot;&gt;Tech Immersion and Placement Programme&lt;/a&gt; (TIPP) partners solely because it’s subsidied for Singaporeans.&lt;/p&gt;
@@ -33,7 +93,7 @@
 &lt;p&gt;We practised Agile methodology whereby we spoke with the client and noted their feature requests. We translated them to user stories and wrote it down on index cards. As a team, we estimated the story points and our velocity (how many points we can finish in a week). We prioritised the features based on logical workflow and based on which features will deliver maximum value to the client.&lt;/p&gt;
 &lt;p&gt;In conclusion, both ThoughtWorks and GA attract different kinds of people. Despite what I said, JumpStart has some prerequisites: applicants are required to do 5-6 Data Structure and Algorithm questions and are assessed on it before they are accepted. GA does not have similar requirements as far as I know. You can think of it like GA takes you from 0% - 60%, while JumpStart takes you from 20% - 80%.&lt;/p&gt;
 &lt;!-- what is trunk-based development? everything on master branch something something --&gt;</content:encoded></item><item><title><![CDATA[Nested Todo List]]></title><description><![CDATA[Project URL ,  Github Problem I wanted an overview of what I studied and be able to drill down to the specific subtopic. Solution Nested…]]></description><link>https://jenlky.netlify.com//projects/nested-todo-list/</link><guid isPermaLink="false">https://jenlky.netlify.com//projects/nested-todo-list/</guid><pubDate>Mon, 08 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;!-- ![ShopLah front page](../assets/shoplah.webp &quot;ShopLah front page&quot;) --&gt;
-&lt;p&gt;&lt;a href=&quot;https://jumpstart-todo-list.netlify.com/&quot;&gt;Project URL&lt;/a&gt;, &lt;a href=&quot;https://github.com/jenlky/react-app-todo-list&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://jumpstart-todo-list.netlify.app/&quot;&gt;Project URL&lt;/a&gt;, &lt;a href=&quot;https://github.com/jenlky/react-app-todo-list&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h4&gt;Problem&lt;/h4&gt;
 &lt;p&gt;I wanted an overview of what I studied and be able to drill down to the specific subtopic.&lt;/p&gt;
 &lt;h4&gt;Solution&lt;/h4&gt;
