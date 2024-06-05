@@ -1,5 +1,5 @@
 ---
-title: Precepts ProviTrust (Frontend)
+title: ProviTrust (Frontend)
 date: "2021-12-31"
 tags: ["Vue", "Wills inheritance"]
 ---
